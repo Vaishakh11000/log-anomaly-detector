@@ -1,0 +1,2787 @@
+[
+  {
+    "incident_id": 0,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 00:39:00",
+    "end": "2026-07-14 00:39:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 00:39:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 1,
+    "summary": "7 events | users: backup, deploy, ftpuser... | source IPs: 203.0.113.212",
+    "users": [
+      "backup",
+      "deploy",
+      "ftpuser",
+      "guest",
+      "postgres",
+      "support",
+      "test"
+    ],
+    "source_ips": [
+      "203.0.113.212"
+    ],
+    "start": "2026-07-14 01:51:00",
+    "end": "2026-07-14 01:51:26",
+    "event_count": 7,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1087",
+        "technique_name": "Account Discovery",
+        "tactic": "Discovery"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 01:51:00",
+        "user": "ftpuser",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for ftpuser from 203.0.113.212 port 60738 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:05",
+        "user": "postgres",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for postgres from 203.0.113.212 port 64494 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:08",
+        "user": "test",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for test from 203.0.113.212 port 54339 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:11",
+        "user": "backup",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for backup from 203.0.113.212 port 62205 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:17",
+        "user": "deploy",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for deploy from 203.0.113.212 port 54304 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:23",
+        "user": "guest",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for guest from 203.0.113.212 port 56543 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 01:51:26",
+        "user": "support",
+        "source_ip": "203.0.113.212",
+        "message": "Failed password for support from 203.0.113.212 port 52266 ssh2"
+      }
+    ],
+    "narrative": "1. Likely, an attacker targeted a specific server by attempting to brute force various user credentials on it using distinct usernames from backup, deploy, ftpuser, guest, postgres, support, and test accounts between July 14th at approximately 01:51 AM UTC.\n2. The incident progresses through the Credential Access (T1110) stage as well as Discovery (T1087), where multiple usernames are probed for vulnerabilities from a single source IP address, indicating initial reconnaissance and subsequent credential stuffing attempts to gain unauthorized access.\n3. Confidence Level: High - The use of distinct user credentials in quick succession strongly suggests an automated attack aimed at brute-forcing passwords rather than human error or isolated incidents.\n4. Recommended next action for the analyst is to immediately block all traffic from the suspicious source IP (203.0.113.212) and conduct a thorough review of account security policies, including password complexity requirements and frequency of mandatory changes; additionally, consider implementing multi-factor authentication as an extra layer of defense against future credential stuffing attempts."
+  },
+  {
+    "incident_id": 2,
+    "summary": "10 events | users: alice | source IPs: 172.16.5.191, 172.16.5.222",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "172.16.5.191",
+      "172.16.5.222"
+    ],
+    "start": "2026-07-14 02:14:00",
+    "end": "2026-07-14 02:41:17",
+    "event_count": 10,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1548",
+        "technique_name": "Abuse Elevation Control Mechanism",
+        "tactic": "Privilege Escalation"
+      },
+      {
+        "technique_id": "T1136",
+        "technique_name": "Create Account",
+        "tactic": "Persistence"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 02:14:00",
+        "user": "alice",
+        "source_ip": "172.16.5.191",
+        "message": "Failed password for alice from 172.16.5.191 port 54506 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:14:01",
+        "user": "alice",
+        "source_ip": "172.16.5.191",
+        "message": "Failed password for alice from 172.16.5.191 port 54506 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:14:02",
+        "user": "alice",
+        "source_ip": "172.16.5.191",
+        "message": "Failed password for alice from 172.16.5.191 port 54506 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:14:25",
+        "user": "alice",
+        "source_ip": "",
+        "message": "user=alice : COMMAND=/bin/su root"
+      },
+      {
+        "timestamp": "2026-07-14 02:15:23",
+        "user": "alice",
+        "source_ip": "",
+        "message": "user=alice added new user 'backdoor01' to group sudo"
+      },
+      {
+        "timestamp": "2026-07-14 02:40:00",
+        "user": "alice",
+        "source_ip": "172.16.5.222",
+        "message": "Failed password for alice from 172.16.5.222 port 51796 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:40:01",
+        "user": "alice",
+        "source_ip": "172.16.5.222",
+        "message": "Failed password for alice from 172.16.5.222 port 51796 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:40:05",
+        "user": "alice",
+        "source_ip": "172.16.5.222",
+        "message": "Failed password for alice from 172.16.5.222 port 51796 ssh2"
+      },
+      {
+        "timestamp": "2026-07-14 02:40:50",
+        "user": "alice",
+        "source_ip": "",
+        "message": "user=alice : COMMAND=/bin/su root"
+      },
+      {
+        "timestamp": "2026-07-14 02:41:17",
+        "user": "alice",
+        "source_ip": "",
+        "message": "user=alice added new user 'backdoor03' to group sudo"
+      }
+    ],
+    "narrative": "1. Alice, using her credentials from two different source IPs, attempted to brute force into an account on a system protected by SSH2 but failed multiple times before gaining root access through 'su' commands and creating additional accounts with elevated privileges for persistence purposes. (T1548)\n   \n   Confidence Level: High - The sequence of events shows Alice using repeated attempts to breach credentials, followed by successful privilege escalation and account creation consistent with the techniques identified in MITRE ATT&CK framework. \n\n2. This incident progresses through stages T1548 (Abuse Elevation Control Mechanism) for Privilege Escalation and T1136 (Create Account) for Persistence, as well as initial attempts at gaining access which can be associated with the Credential Access technique of T1110.\n   \n   Confidence Level: High - The events clearly follow a pattern that matches these techniques in MITRE ATT&CK framework and there is no indication of any discrepancies or anomalies not accounted for by them. \n\n3. Recommended next action: Immediately isolate the affected systems, conduct an investigation to determine if other accounts have been compromised, review firewall logs for suspicious activities from external sources, and implement stricter password policies along with multi-factor authentication where possible."
+  },
+  {
+    "incident_id": 3,
+    "summary": "1 events | users: alice | source IPs: n/a",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 04:53:00",
+    "end": "2026-07-14 04:53:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 04:53:00",
+        "user": "alice",
+        "source_ip": "",
+        "message": "Started Session 91 of user alice."
+      }
+    ],
+    "narrative": "1. At precisely 04:53 AM on July 14, user Alice initiated Session 91 of her account without any preceding activity or known reason to start a session at that time; this is an anomaly as it deviates from the expected behavior for such sessions which typically follow after regular working hours.\n\n2. This incident progresses through stages Tactic: Persistence (T1058), Technique: Session Hijacking, and possibly Pre-session Activity (although not explicitly listed in MITRE ATT&CK as a technique with an ID). The lack of known matching techniques suggests that the anomaly may involve novel tactics or sophisticated obfuscation.\n\n3. Confidence level: Medium - While there are no direct matches to established Mitre Techniques, the timing and nature of Session 91 suggest a potential security concern; however, without further evidence of malicious intent or known patterns, it's not definitive proof of an attack.\n\n4. Recommended next action: The analyst should immediately alert Alice about this unusual session activity to confirm whether she initiated the session intentionally and investigate any associated risks that may have arisen from her actions during Session 91; if necessary, temporarily restrict access until clarity is obtained regarding the purpose of such an early-morning login."
+  },
+  {
+    "incident_id": 4,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 06:33:00",
+    "end": "2026-07-14 06:33:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 06:33:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 38 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 5,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 07:44:00",
+    "end": "2026-07-14 07:44:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 07:44:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 31 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 6,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.142",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.142"
+    ],
+    "start": "2026-07-14 07:53:00",
+    "end": "2026-07-14 07:53:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 07:53:00",
+        "user": "alice",
+        "source_ip": "10.0.0.142",
+        "message": "Failed password for alice from 10.0.0.142 port 64792 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 7,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 08:21:00",
+    "end": "2026-07-14 08:21:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 08:21:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 8,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.126",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.126"
+    ],
+    "start": "2026-07-14 09:26:00",
+    "end": "2026-07-14 09:26:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 09:26:00",
+        "user": "bob",
+        "source_ip": "10.0.1.126",
+        "message": "Failed password for bob from 10.0.1.126 port 57886 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 9,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.148",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.148"
+    ],
+    "start": "2026-07-14 09:59:00",
+    "end": "2026-07-14 09:59:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 09:59:00",
+        "user": "alice",
+        "source_ip": "10.0.0.148",
+        "message": "Failed password for alice from 10.0.0.148 port 57096 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 10,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.229",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.229"
+    ],
+    "start": "2026-07-14 11:07:00",
+    "end": "2026-07-14 11:07:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 11:07:00",
+        "user": "bob",
+        "source_ip": "10.0.1.229",
+        "message": "Failed password for bob from 10.0.1.229 port 51753 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 11,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.71",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.71"
+    ],
+    "start": "2026-07-14 12:48:00",
+    "end": "2026-07-14 12:48:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 12:48:00",
+        "user": "dave",
+        "source_ip": "10.0.3.71",
+        "message": "Failed password for dave from 10.0.3.71 port 51674 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 12,
+    "summary": "1 events | users: admin | source IPs: n/a",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 13:38:00",
+    "end": "2026-07-14 13:38:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 13:38:00",
+        "user": "admin",
+        "source_ip": "",
+        "message": "Started Session 38 of user admin."
+      }
+    ],
+    "narrative": "1. At precisely 1:38 PM on July 14, 2026, an anomalous event was detected where user 'admin' initiated Session 38 without any prior activity or known session start time logged for this account within the system records. This unusual behavior suggests a potential security breach as it deviates from normal patterns of administrative actions and could indicate unautnerous access to sensitive resources by an external actor masquerading as 'admin'.\n\n2. Given that no MITRE ATT&CK techniques were matched, this incident falls into the category of novel or unclassified anomalies within our grounded lookup table for analysis purposes. However, if we consider typical behavior associated with such incidents involving administrative accounts and lacking prior session initiation details, it could be related to initial access (T1058: Spearphishing Link) followed by command and control (T1027: Establish Command & Control Channel), although these techniques were not explicitly identified in the provided data.\n\n3. The confidence level of this incident is Medium, as while there are no direct matches to known ATT&CK tactics or signatures within our system's logs that would typically indicate a breach attempt (such as failed login attempts followed by successful ones), the anomaly itself\u2014starting an admin session without prior activity and atypical timing\u2014raises suspicion of unauthorized access.\n\n4. The recommended next action for the analyst is to immediately isolate user 'admin' from system privileges while conducting a thorough investigation into their recent activities, including reviewing all commands executed during Session 38, examining network traffic associated with this session, and cross-referencing these actions against known indicators of compromise (IOCs). Additionally, the analyst should alert incident response teams to prepare for potential escalation procedures if further evidence"
+  },
+  {
+    "incident_id": 13,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.26",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.26"
+    ],
+    "start": "2026-07-14 14:07:00",
+    "end": "2026-07-14 14:07:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 14:07:00",
+        "user": "carol",
+        "source_ip": "10.0.2.26",
+        "message": "Failed password for carol from 10.0.2.26 port 53846 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 14,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.171",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.171"
+    ],
+    "start": "2026-07-14 16:20:00",
+    "end": "2026-07-14 16:20:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 16:20:00",
+        "user": "carol",
+        "source_ip": "10.0.2.171",
+        "message": "Failed password for carol from 10.0.2.171 port 63893 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 15,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 16:59:00",
+    "end": "2026-07-14 16:59:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 16:59:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 56 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 16,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.141",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.141"
+    ],
+    "start": "2026-07-14 17:46:00",
+    "end": "2026-07-14 17:46:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 17:46:00",
+        "user": "dave",
+        "source_ip": "10.0.3.141",
+        "message": "Failed password for dave from 10.0.3.141 port 56948 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 17,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.58",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.58"
+    ],
+    "start": "2026-07-14 19:27:00",
+    "end": "2026-07-14 19:27:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-14 19:27:00",
+        "user": "alice",
+        "source_ip": "10.0.0.58",
+        "message": "Failed password for alice from 10.0.0.58 port 52881 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 18,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 20:41:00",
+    "end": "2026-07-14 20:41:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 20:41:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 58 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 19,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-14 23:46:00",
+    "end": "2026-07-14 23:46:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-14 23:46:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 20,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 04:05:00",
+    "end": "2026-07-15 04:05:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 04:05:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 51 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 21,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 04:32:00",
+    "end": "2026-07-15 04:32:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 04:32:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 22,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 05:47:00",
+    "end": "2026-07-15 05:47:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 05:47:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 23,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 05:55:00",
+    "end": "2026-07-15 05:55:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 05:55:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 24,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.78",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.78"
+    ],
+    "start": "2026-07-15 07:00:00",
+    "end": "2026-07-15 07:00:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 07:00:00",
+        "user": "carol",
+        "source_ip": "10.0.2.78",
+        "message": "Failed password for carol from 10.0.2.78 port 59305 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 25,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.44",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.44"
+    ],
+    "start": "2026-07-15 08:03:00",
+    "end": "2026-07-15 08:03:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 08:03:00",
+        "user": "bob",
+        "source_ip": "10.0.1.44",
+        "message": "Failed password for bob from 10.0.1.44 port 62986 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 26,
+    "summary": "2 events | users: admin | source IPs: 10.0.10.214, 198.51.100.238",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.214",
+      "198.51.100.238"
+    ],
+    "start": "2026-07-15 09:44:00",
+    "end": "2026-07-15 10:04:00",
+    "event_count": 2,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access / Persistence"
+      },
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1021.004",
+        "technique_name": "Remote Services: SSH",
+        "tactic": "Lateral Movement"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 09:44:00",
+        "user": "admin",
+        "source_ip": "198.51.100.238",
+        "message": "Accepted password for admin from 198.51.100.238 port 53598 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:04:00",
+        "user": "admin",
+        "source_ip": "10.0.10.214",
+        "message": "Failed password for admin from 10.0.10.214 port 62536 ssh2"
+      }
+    ],
+    "narrative": "1. An unauthorized user, possibly a bot or an attacker using credential stuffing techniques, successfully logged into the admin account from IP address 198.51.100.238 at around 9:44 AM on July 15th, and then attempted to log in again within minutes but failed due to incorrect credentials or a lockout policy after multiple unsuccessful attempts; this was detected by the impossible-travel physics check indicating geographically implausible access.\n\n2. The incident progresses through MITRE ATT&CK stages T1078 (Initial Access / Persistence), as it involves valid accounts being used for unauthorized login, and then moves to stage T1110 (Brute Force) due to the failed password attempt from a geographically implausible source IP.\n\n3. Confidence Level: High - The use of distinct usernames/IPs within such an anomalously short time frame is highly suspicious and indicative of credential stuffing or brute force attacks, especially when coupled with the impossible-travel physics check flagging geographically implausible access.\n\n4. Recommended next action: Immediately revoke privileges for the admin account involved in these events to prevent potential further unauthorized actions and conduct a thorough investigation into how credentials were compromised, including reviewing recent password changes or leaks that could have been used by attackers."
+  },
+  {
+    "incident_id": 27,
+    "summary": "6 events | users: ftpuser, oracle, root... | source IPs: 192.0.2.110",
+    "users": [
+      "ftpuser",
+      "oracle",
+      "root",
+      "support",
+      "test",
+      "www-data"
+    ],
+    "source_ips": [
+      "192.0.2.110"
+    ],
+    "start": "2026-07-15 10:17:00",
+    "end": "2026-07-15 10:17:26",
+    "event_count": 6,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1087",
+        "technique_name": "Account Discovery",
+        "tactic": "Discovery"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 10:17:00",
+        "user": "oracle",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for oracle from 192.0.2.110 port 55881 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:17:06",
+        "user": "www-data",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for www-data from 192.0.2.110 port 54333 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:17:11",
+        "user": "test",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for test from 192.0.2.110 port 58785 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:17:16",
+        "user": "root",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for root from 192.0.2.110 port 51291 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:17:20",
+        "user": "support",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for support from 192.0.2.110 port 63588 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 10:17:26",
+        "user": "ftpuser",
+        "source_ip": "192.0.2.110",
+        "message": "Failed password for ftpuser from 192.0.2.110 port 53150 ssh2"
+      }
+    ],
+    "narrative": "1. An attacker likely attempted to gain unauthorized access by trying multiple usernames on a single server, starting with 'oracle' and ending with 'ftpuser', all from one IP address (192.0.2.110). The failed password attempts suggest the use of brute force tactics against these accounts via SSH connections to exploit credential access vulnerabilities.\n\n2. This incident progresses through MITRE ATT&CK stage T1110, Credential Access (Brute Force), and also involves multiple usernames which aligns with the Account Discovery technique of T1087 within a single session from one source IP address. \n\n3. Confidence Level: High - The consistent failed login attempts for different accounts using SSH2 protocol are strong indicators of credential-based attacks, and since all events occurred in rapid succession without any successful logins or other anomalies to suggest otherwise (like port scanning), it's highly likely that this is a concentrated brute force attack.\n\n4. Recommended next action: Immedi01 Alert the security team immediately for investigation, and implement account lockout policies after multiple failed attempts as well as network-level blocking of suspicious IP addresses to prevent further unauthorized access attempts while awaiting response from potential targets or owners (if identifiable)."
+  },
+  {
+    "incident_id": 28,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 10:36:00",
+    "end": "2026-07-15 10:36:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 10:36:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 29,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.88",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.88"
+    ],
+    "start": "2026-07-15 12:50:00",
+    "end": "2026-07-15 12:50:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 12:50:00",
+        "user": "dave",
+        "source_ip": "10.0.3.88",
+        "message": "Failed password for dave from 10.0.3.88 port 59139 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 30,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 13:21:00",
+    "end": "2026-07-15 13:21:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 13:21:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 31,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.167",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.167"
+    ],
+    "start": "2026-07-15 14:07:00",
+    "end": "2026-07-15 14:07:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 14:07:00",
+        "user": "alice",
+        "source_ip": "10.0.0.167",
+        "message": "Failed password for alice from 10.0.0.167 port 63633 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 32,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.188",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.188"
+    ],
+    "start": "2026-07-15 15:08:00",
+    "end": "2026-07-15 15:08:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 15:08:00",
+        "user": "dave",
+        "source_ip": "10.0.3.188",
+        "message": "Failed password for dave from 10.0.3.188 port 53648 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 33,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 15:09:00",
+    "end": "2026-07-15 15:09:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 15:09:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 34,
+    "summary": "2 events | users: bob | source IPs: 10.0.1.143",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.143"
+    ],
+    "start": "2026-07-15 15:11:00",
+    "end": "2026-07-15 15:25:00",
+    "event_count": 2,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 15:11:00",
+        "user": "bob",
+        "source_ip": "10.0.1.143",
+        "message": "Failed password for bob from 10.0.1.143 port 52623 ssh2"
+      },
+      {
+        "timestamp": "2026-07-15 15:25:00",
+        "user": "bob",
+        "source_ip": "",
+        "message": "Started Session 84 of user bob."
+      }
+    ],
+    "narrative": "1. Likely, an attacker attempted to gain unauthorized access by trying multiple password combinations (brute force) using user 'bob's credentials from IP address 10.0.1.143 on port 52623 for SSH login around July 15th at approximately 15:11 and again later that day, with a successful session starting shortly after the failed attempts ended.\n\n2. The incident progresses through MITRE ATT&CK stage T1110 (Brute Force) - Credential Access as it involves an attacker trying to gain access by systematically entering passwords until they find the correct one for user 'bob'.\n\n3. Confidence level: High, because there is a clear sequence of failed and successful login attempts from distinct IPs associated with specific usernames within a short timeframe which strongly indicates credential-based unauthorized access efforts. \n\n4. Recommended next action for the analyst would be to immediately lock down user 'bob's account, investigate further by examining logs and system changes made during session 84 of that day, and consider implementing multi-factor authentication (MFA) or stronger password policies as a preventive measure against future brute force attacks."
+  },
+  {
+    "incident_id": 35,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.171",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.171"
+    ],
+    "start": "2026-07-15 17:44:00",
+    "end": "2026-07-15 17:44:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 17:44:00",
+        "user": "carol",
+        "source_ip": "10.0.2.171",
+        "message": "Failed password for carol from 10.0.2.171 port 56421 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 36,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 18:30:00",
+    "end": "2026-07-15 18:30:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 18:30:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 53 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 37,
+    "summary": "1 events | users: admin | source IPs: 203.0.113.116",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "203.0.113.116"
+    ],
+    "start": "2026-07-15 18:49:00",
+    "end": "2026-07-15 18:49:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access / Persistence"
+      },
+      {
+        "technique_id": "T1021.004",
+        "technique_name": "Remote Services: SSH",
+        "tactic": "Lateral Movement"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-15 18:49:00",
+        "user": "admin",
+        "source_ip": "203.0.113.116",
+        "message": "Accepted password for admin from 203.0.113.116 port 63261 ssh2"
+      }
+    ],
+    "narrative": "1. An unauthorized user, using a valid admin account name 'admin', was able to connect from an IP address (203.0.113.116) that is geographically implausible for the location of our network's infrastructure within seconds on July 15th at 6:49 PM, suggesting a possible breach or misuse by someone with access to this account from an unusual distance (possibly via VPN).\n\n2. The incident progresses through MITRE ATT&CK stages T1078 and T1021.004 as the attacker used valid credentials for initial access, then moved laterally within our network using SSH to a different service or host after gaining administrative privileges (lateral movement).\n\n3. Confidence level: High - The use of an implausible source IP and successful authentication in such short time frame strongly indicates unauthorized activity that has likely bypassed standard security measures, suggesting the attacker had prior knowledge or access to credentials/network infrastructure beyond normal user privileges.\n\n4. Recommended next action: Immediately isolate any affected systems from the network and initiate a forensic investigation on those machines along with reviewing all SSH logs in real-time during this period, while also auditing recent changes made to privileged accounts as part of our incident response protocols."
+  },
+  {
+    "incident_id": 38,
+    "summary": "1 events | users: bob | source IPs: n/a",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [],
+    "start": "2026-07-15 22:30:00",
+    "end": "2026-07-15 22:30:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-15 22:30:00",
+        "user": "bob",
+        "source_ip": "",
+        "message": "Started Session 9 of user bob."
+      }
+    ],
+    "narrative": "1. Likely, Bob initiated a session that deviates from his normal behavior patterns around July 15th at 22:30 hours; this could indicate he is attempting to access restricted areas or systems without proper authorization.\n\n2. This incident progresses through the 'Reconnaissance' stage (T1576) of MITRE ATT&CK, as it appears Bob may be trying to gather information about network resources and potential vulnerabilities within them during this session initiation timeframe.\n\n3. Confidence level: Medium; The anomaly is based on a deviation from normal behavior but lacks additional context or matching techniques that would confirm malicious intent. It's possible Bob could be exploring for legitimate reasons, such as troubleshooting issues he encountered earlier in the day.\n\n4. Recommended next action: Monitor user bob\u2019th session activities closely and review any commands executed during this time to determine if there was an attempt at unauthorized access or data exfiltration; consider temporarily restricting his account privileges while further investigation is conducted, especially given the anomaly in behavior."
+  },
+  {
+    "incident_id": 39,
+    "summary": "5 events | users: bob | source IPs: 172.16.5.22",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "172.16.5.22"
+    ],
+    "start": "2026-07-16 02:55:00",
+    "end": "2026-07-16 02:55:54",
+    "event_count": 5,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1548",
+        "technique_name": "Abuse Elevation Control Mechanism",
+        "tactic": "Privilege Escalation"
+      },
+      {
+        "technique_id": "T1136",
+        "technique_name": "Create Account",
+        "tactic": "Persistence"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 02:55:00",
+        "user": "bob",
+        "source_ip": "172.16.5.22",
+        "message": "Failed password for bob from 172.16.5.22 port 64013 ssh2"
+      },
+      {
+        "timestamp": "2026-07-16 02:55:03",
+        "user": "bob",
+        "source_ip": "172.16.5.22",
+        "message": "Failed password for bob from 172.16.5.22 port 64013 ssh2"
+      },
+      {
+        "timestamp": "2026-07-16 02:55:06",
+        "user": "bob",
+        "source_ip": "172.16.5.22",
+        "message": "Failed password for bob from 172.16.5.22 port 64013 ssh2"
+      },
+      {
+        "timestamp": "2026-07-16 02:55:30",
+        "user": "bob",
+        "source_ip": "",
+        "message": "user=bob : COMMAND=/bin/su root"
+      },
+      {
+        "timestamp": "2026-07-16 02:55:54",
+        "user": "bob",
+        "source_ip": "",
+        "message": "user=bob added new user 'backdoor02' to group sudo"
+      }
+    ],
+    "narrative": "1. An individual named Bob attempted to gain unauthorized access by trying multiple passwords on a system using SSH, which was unsuccessful until he managed to elevate his privileges and create another user account with administrative capabilities ('backdoor02'). This suggests that the attacker had some prior knowledge or credentials for initial login.\n   \n2. The incident progresses through T1110 (Brute Force) as Bob attempts multiple password entries, followed by T1548 (Abuse Elevation Control Mechanism), where he successfully escalates his privileges to root using 'su', and finally culminating in the creation of a new account with administrative rights under user 'backdoor02' which aligns with MITRE ATT&CK technique T1136 (Create Account) for establishing persistence.\n   \n3. Confidence Level: High - The sequence shows clear, deliberate actions that match known techniques and lacks any indicators of a false positive or automated tool misuse without additional context suggesting otherwise.\n   \n4. Recommended Next Action: Immediately isolate the affected systems to prevent potential lateral movement within the network while conducting an urgent investigation into how Bob gained initial access, review user account creation policies and implement multi-factor authentication where possible as a mitigation strategy against similar future attempts."
+  },
+  {
+    "incident_id": 40,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 04:34:00",
+    "end": "2026-07-16 04:34:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 04:34:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 41,
+    "summary": "1 events | users: bob | source IPs: n/a",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 05:06:00",
+    "end": "2026-07-16 05:06:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 05:06:00",
+        "user": "bob",
+        "source_ip": "",
+        "message": "Started Session 35 of user bob."
+      }
+    ],
+    "narrative": "On July 16, at exactly 5:06 AM, user \"bob\" initiated a session that was unusual because it deviated from his normal behavior patterns; this is our first sign of potential malicious activity as there were no known techniques matched to describe the anomaly. Since we have not yet identified any specific MITRE ATT&CK technique associated with these events, they represent an unclassified threat vector that requires further investigation for a more accurate assessment and response strategy. Given this is our only event at present without additional context or matching known techniques, I assign it a confidence level of Low due to the lack of concrete evidence pointing towards any specific tactics used by attackers; however, we should remain vigilant as new information may emerge that could elevate its significance. As an immediate next action for our analysts, they should perform in-depth user behavior analytics on \"bob\" and monitor network traffic originating from his devices to identify any suspicious patterns or connections indicative of a compromise while continuing the search for potential MITRE ATT&CK techniques that could be associated with this anomaly.\n\n\nIncident summary: 1 unclassified event involving user \"bob\" on July 16, 2dece at 5:06 AM; confidence level is Low due to insufficient evidence of specific tactics used by attackers and the need for further investigation through in-depth UBA and network traffic monitoring."
+  },
+  {
+    "incident_id": 42,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 05:52:00",
+    "end": "2026-07-16 05:52:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 05:52:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 43,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 06:39:00",
+    "end": "2026-07-16 06:39:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 06:39:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 44,
+    "summary": "1 events | users: carol | source IPs: 203.0.113.118",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "203.0.113.118"
+    ],
+    "start": "2026-07-16 08:33:00",
+    "end": "2026-07-16 08:33:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1078",
+        "technique_name": "Valid Accounts",
+        "tactic": "Initial Access / Persistence"
+      },
+      {
+        "technique_id": "T1021.004",
+        "technique_name": "Remote Services: SSH",
+        "tactic": "Lateral Movement"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 08:33:00",
+        "user": "carol",
+        "source_ip": "203.0.113.118",
+        "message": "Accepted password for carol from 203.0.113.118 port 58201 ssh2"
+      }
+    ],
+    "narrative": "On July 16, Carol logged into her account from an IP address that was geographically impossible to reach within such a short timeframe (08:33 AM), suggesting this could be the initial access phase where attackers used valid accounts for unauthorized entry. The subsequent SSH connection on port 58201 indicates lateral movement, as Carol's account is now being accessed from an unrelated source IP address within a very short time window after her login attempt (Technique T1021.004). This incident progresses through the initial access and persistence phases of MITRE ATT&CK framework with high confidence due to the clear evidence provided by impossible-travel physics checks, distinct usernames, source IPs, and timestamps (High Confidence: The anomalies are consistent across all logs). As a next action for the analyst, it is recommended to immediately isolate Carol's account from network access while conducting an urgent investigation into how her credentials were compromised."
+  },
+  {
+    "incident_id": 45,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.153",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.153"
+    ],
+    "start": "2026-07-16 09:15:00",
+    "end": "2026-07-16 09:15:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 09:15:00",
+        "user": "bob",
+        "source_ip": "10.0.1.153",
+        "message": "Failed password for bob from 10.0.1.153 port 55210 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 46,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.159",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.159"
+    ],
+    "start": "2026-07-16 09:25:00",
+    "end": "2026-07-16 09:25:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 09:25:00",
+        "user": "carol",
+        "source_ip": "10.0.2.159",
+        "message": "Failed password for carol from 10.0.2.159 port 62113 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 47,
+    "summary": "1 events | users: alice | source IPs: n/a",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 11:32:00",
+    "end": "2026-07-16 11:32:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 11:32:00",
+        "user": "alice",
+        "source_ip": "",
+        "message": "Started Session 26 of user alice."
+      }
+    ],
+    "narrative": "1. At precisely 11:32 AM on July 16, 2026, user Alice initiated a session that deviates from her normal activity pattern; this anomalous behavior suggests she might be engaging in unauteneric or potentially malicious actions within the system without prior detection of such activities.\n\n2. This incident progresses through stages T1589 (User Credential Misuse) and possibly other unclassified techniques, as no known MITRE ATT&CK technique was matched to these events; however, it indicates a potential credential misuse or exploitation phase where the user's legitimate access is being leveraged for unauthorized activities.\n\n3. Confidence level: Medium - The use of an unclassified anomaly with no direct MITRE ATT&CK match suggests that while there may be suspicious activity, it does not clearly align with a known attack pattern; however, the deviation from normal behavior is concerning and warrants further investigation.\n\n4. Recommended next action: The analyst should immediately investigate Alice's account for any unauthorized actions taken during this session by reviewing system logs in detail around that time frame to identify specific activities or data access attempts, as well as conduct a thorough credential security check and enforce multi-factor authentication if not already implemented.\n\n\nIncident summary:\n\n- 2 anomalous events from 2026-07-16 11:32:00 to 2026-07-16 11:32:00\n\n- Distinct usernames involved (1): bob, charlie\n\n- Distinct source IPs (2) observed during the incident.\n\nIncident events (chronological):\n\n- [2026-0"
+  },
+  {
+    "incident_id": 48,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.70",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.70"
+    ],
+    "start": "2026-07-16 11:36:00",
+    "end": "2026-07-16 11:36:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 11:36:00",
+        "user": "carol",
+        "source_ip": "10.0.2.70",
+        "message": "Failed password for carol from 10.0.2.70 port 64057 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 49,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.71",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.71"
+    ],
+    "start": "2026-07-16 12:24:00",
+    "end": "2026-07-16 12:24:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 12:24:00",
+        "user": "admin",
+        "source_ip": "10.0.10.71",
+        "message": "Failed password for admin from 10.0.10.71 port 52946 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 50,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 14:16:00",
+    "end": "2026-07-16 14:16:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 14:16:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 51,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 16:31:00",
+    "end": "2026-07-16 16:31:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 16:31:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 57 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 52,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.186",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.186"
+    ],
+    "start": "2026-07-16 16:52:00",
+    "end": "2026-07-16 16:52:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 16:52:00",
+        "user": "dave",
+        "source_ip": "10.0.3.186",
+        "message": "Failed password for dave from 10.0.3.186 port 64614 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 53,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 17:34:00",
+    "end": "2026-07-16 17:34:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 17:34:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 54,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-16 18:06:00",
+    "end": "2026-07-16 18:06:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-16 18:06:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 42 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 55,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.190",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.190"
+    ],
+    "start": "2026-07-16 18:53:00",
+    "end": "2026-07-16 18:53:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 18:53:00",
+        "user": "dave",
+        "source_ip": "10.0.3.190",
+        "message": "Failed password for dave from 10.0.3.190 port 55345 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 56,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.37",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.37"
+    ],
+    "start": "2026-07-16 19:09:00",
+    "end": "2026-07-16 19:09:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 19:09:00",
+        "user": "carol",
+        "source_ip": "10.0.2.37",
+        "message": "Failed password for carol from 10.0.2.37 port 50627 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 57,
+    "summary": "2 events | users: bob | source IPs: 10.0.1.133",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.133"
+    ],
+    "start": "2026-07-16 19:23:00",
+    "end": "2026-07-16 19:47:00",
+    "event_count": 2,
+    "severity": "high",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-16 19:23:00",
+        "user": "bob",
+        "source_ip": "10.0.1.133",
+        "message": "Failed password for bob from 10.0.1.133 port 59202 ssh2"
+      },
+      {
+        "timestamp": "2026-07-16 19:47:00",
+        "user": "bob",
+        "source_ip": "",
+        "message": "Started Session 21 of user bob."
+      }
+    ],
+    "narrative": "1. Likely, an attacker attempted to gain unauthorized access by trying different passwords on Bob's account using a brute force method; when they failed initially due to strong password protection measures but eventually succeeded and started their second session of legitimate use within the same hour as the breach attempt was detected.\n2. The incident progresses through stages T110 (Initial Access) where unauthorized access is attempted, followed by stage T1110 (Credential Access) indicating a successful credential compromise after multiple failed attempts at gaining entry to Bob's account using SSH brute force attack techniques.\n3. Confidence level: High - The consistent timing of the events and matching MITRE ATT&CK technique strongly suggest that this is an intentional, targeted attempt on a specific user\u2019s credentials rather than random or isolated incidents. \n4. Recommended next action for the analyst would be to immediately reset Bob's password after confirming his identity through alternative verification methods and then review all sessions initiated by him since the breach timeframe, as well as auditing any data that may have been accessed or exfiltrated during this period."
+  },
+  {
+    "incident_id": 58,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 05:46:00",
+    "end": "2026-07-17 05:46:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 05:46:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 59,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 07:36:00",
+    "end": "2026-07-17 07:36:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 07:36:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 22 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 60,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.115",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.115"
+    ],
+    "start": "2026-07-17 09:04:00",
+    "end": "2026-07-17 09:04:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 09:04:00",
+        "user": "admin",
+        "source_ip": "10.0.10.115",
+        "message": "Failed password for admin from 10.0.10.115 port 55661 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 61,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 09:38:00",
+    "end": "2026-07-17 09:38:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 09:38:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 62,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.131",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.131"
+    ],
+    "start": "2026-07-17 11:29:00",
+    "end": "2026-07-17 11:29:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 11:29:00",
+        "user": "admin",
+        "source_ip": "10.0.10.131",
+        "message": "Failed password for admin from 10.0.10.131 port 59919 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 63,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.87",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.87"
+    ],
+    "start": "2026-07-17 12:26:00",
+    "end": "2026-07-17 12:26:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 12:26:00",
+        "user": "dave",
+        "source_ip": "10.0.3.87",
+        "message": "Failed password for dave from 10.0.3.87 port 55260 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 64,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.101",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.101"
+    ],
+    "start": "2026-07-17 13:00:00",
+    "end": "2026-07-17 13:00:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 13:00:00",
+        "user": "bob",
+        "source_ip": "10.0.1.101",
+        "message": "Failed password for bob from 10.0.1.101 port 54345 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 65,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.144",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.144"
+    ],
+    "start": "2026-07-17 13:26:00",
+    "end": "2026-07-17 13:26:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 13:26:00",
+        "user": "admin",
+        "source_ip": "10.0.10.144",
+        "message": "Failed password for admin from 10.0.10.144 port 58683 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 66,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 14:22:00",
+    "end": "2026-07-17 14:22:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 14:22:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 25 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 67,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 14:43:00",
+    "end": "2026-07-17 14:43:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 14:43:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 68,
+    "summary": "1 events | users: dave | source IPs: n/a",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 14:57:00",
+    "end": "2026-07-17 14:57:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 14:57:00",
+        "user": "dave",
+        "source_ip": "",
+        "message": "Started Session 58 of user dave."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 69,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.71",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.71"
+    ],
+    "start": "2026-07-17 15:45:00",
+    "end": "2026-07-17 15:45:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 15:45:00",
+        "user": "carol",
+        "source_ip": "10.0.2.71",
+        "message": "Failed password for carol from 10.0.2.71 port 56807 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 70,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.84",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.84"
+    ],
+    "start": "2026-07-17 17:12:00",
+    "end": "2026-07-17 17:12:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 17:12:00",
+        "user": "admin",
+        "source_ip": "10.0.10.84",
+        "message": "Failed password for admin from 10.0.10.84 port 59912 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 71,
+    "summary": "1 events | users: carol | source IPs: 10.0.2.93",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.93"
+    ],
+    "start": "2026-07-17 18:01:00",
+    "end": "2026-07-17 18:01:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-17 18:01:00",
+        "user": "carol",
+        "source_ip": "10.0.2.93",
+        "message": "Failed password for carol from 10.0.2.93 port 62919 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 72,
+    "summary": "1 events | users: carol | source IPs: n/a",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 20:19:00",
+    "end": "2026-07-17 20:19:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 20:19:00",
+        "user": "carol",
+        "source_ip": "",
+        "message": "Started Session 85 of user carol."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 73,
+    "summary": "1 events | users: admin | source IPs: n/a",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [],
+    "start": "2026-07-17 22:08:00",
+    "end": "2026-07-17 22:08:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-17 22:08:00",
+        "user": "admin",
+        "source_ip": "",
+        "message": "Started Session 42 of user admin."
+      }
+    ],
+    "narrative": "1. Likely, an unauthorized user with administrative privileges attempted to access sensitive information or systems within a network starting at exactly 20:08 on July 17th, as indicated by the anomalous event where \"admin\" started Session 42 of their own account without any known associated techniques from MITRE ATT&CK.\n\n2. This incident progresses through stages related to initial access (as it involves an unauthorized user with administrative privileges), persistence, and possibly execution as the next steps are not detailed in this sequence but can be inferred based on typical attack patterns following such a start point.\n\n3. Confidence level: High - The use of \"admin\" account for initiating session is highly suspicious since it indicates potential misuse or compromise without any known MITRE ATT&CK techniques to provide context, suggesting an advanced persistent threat (APT) actor might be involved in reconnaissance and gaining initial access.\n\n4. Recommended next action: Immediately isolate the \"admin\" account from all network interactions while conducting a thorough investigation of its activities since 2026-07-17, including reviewing session logs for unauthorized commands or data exfiltration attempts and scanning system files/directories accessed during Session 42."
+  },
+  {
+    "incident_id": 74,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 00:31:00",
+    "end": "2026-07-18 00:31:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 00:31:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 75,
+    "summary": "1 events | users: bob | source IPs: n/a",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 03:39:00",
+    "end": "2026-07-18 03:39:00",
+    "event_count": 1,
+    "severity": "high",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 03:39:00",
+        "user": "bob",
+        "source_ip": "",
+        "message": "Started Session 7 of user bob."
+      }
+    ],
+    "narrative": "1. Bob initiated a session that appeared to be unusual, as it was marked anomalous by security systems without any known corresponding MITRE ATT&CK techniques identified yet (Novel/Unclassified Anomaly).\n\n2. The incident progresses through the \"Start\" stage of the Cyber Kill Chain framework since a session has been started but no subsequent actions have occurred within this log snippet that would map to specific stages beyond starting a session, which is typically associated with reconnaissance or initial access phases in ATT&CK terminology.\n\n3. Confidence level: Medium - While the event itself does not match known techniques and thus cannot be confidently classified further without additional context, its anomalous nature suggests potential unautnerous activity that warrants attention; however, it could also represent benign behavior or a misclassification by security systems.\n\n4. Recommended next action: The analyst should prioritize investigating Bob's session for any suspicious activities and review his recent actions within the network to determine if this is an isolated incident or part of a broader threat, potentially using additional context such as user behavior analytics (UBA) tools, examining system logs around that time frame, and possibly alerting bob directly about unusual account activity."
+  },
+  {
+    "incident_id": 76,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 03:44:00",
+    "end": "2026-07-18 03:44:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 03:44:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 77,
+    "summary": "2 events | users: carol | source IPs: 10.0.2.71, 10.0.2.72",
+    "users": [
+      "carol"
+    ],
+    "source_ips": [
+      "10.0.2.71",
+      "10.0.2.72"
+    ],
+    "start": "2026-07-18 07:11:00",
+    "end": "2026-07-18 07:25:00",
+    "event_count": 2,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 07:11:00",
+        "user": "carol",
+        "source_ip": "10.0.2.71",
+        "message": "Failed password for carol from 10.0.2.71 port 61513 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 07:25:00",
+        "user": "carol",
+        "source_ip": "10.0.2.72",
+        "message": "Failed password for carol from 10.0.2.72 port 53109 ssh2"
+      }
+    ],
+    "narrative": "1. Likely, Carol attempted to access a system using her credentials from two different source IPs within a short timeframe; both attempts failed due to incorrect passwords (brute force attack).\n2. The incident progresses through the Credential Access stage of MITRE ATT&CK techniques T1105-Failed Logon and T1110-Brute Force, as Carol's repeated login failures from different IP addresses suggest a brute force attempt to crack her password(s).\n3. Confidence level: High - The short timeframe between the two failed attempts (4 minutes) combined with distinct source IPs strongly indicates an automated attack rather than human error or random guessing, which is characteristic of credential stuffing and brute-force attacks in this context.\n4. Recommended next action for the analyst: Implement account lockout policies to temporarily disable Carol's accounts after a certain number of failed login attempts within an hour; investigate further by analyzing any other related events or anomalies that may indicate additional compromised credentials and extend monitoring to detect potential lateral movement."
+  },
+  {
+    "incident_id": 78,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.247",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.247"
+    ],
+    "start": "2026-07-18 09:03:00",
+    "end": "2026-07-18 09:03:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 09:03:00",
+        "user": "admin",
+        "source_ip": "10.0.10.247",
+        "message": "Failed password for admin from 10.0.10.247 port 58320 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 79,
+    "summary": "1 events | users: dave | source IPs: 10.0.3.113",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.113"
+    ],
+    "start": "2026-07-18 10:17:00",
+    "end": "2026-07-18 10:17:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 10:17:00",
+        "user": "dave",
+        "source_ip": "10.0.3.113",
+        "message": "Failed password for dave from 10.0.3.113 port 57956 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 80,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.224",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.224"
+    ],
+    "start": "2026-07-18 10:57:00",
+    "end": "2026-07-18 10:57:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 10:57:00",
+        "user": "bob",
+        "source_ip": "10.0.1.224",
+        "message": "Failed password for bob from 10.0.1.224 port 61342 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 81,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.241",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.241"
+    ],
+    "start": "2026-07-18 13:41:00",
+    "end": "2026-07-18 13:41:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 13:41:00",
+        "user": "bob",
+        "source_ip": "10.0.1.241",
+        "message": "Failed password for bob from 10.0.1.241 port 64428 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 82,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.149",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.149"
+    ],
+    "start": "2026-07-18 13:57:00",
+    "end": "2026-07-18 13:57:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 13:57:00",
+        "user": "alice",
+        "source_ip": "10.0.0.149",
+        "message": "Failed password for alice from 10.0.0.149 port 53114 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 83,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 14:31:00",
+    "end": "2026-07-18 14:31:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 14:31:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 84,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.216",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.216"
+    ],
+    "start": "2026-07-18 15:02:00",
+    "end": "2026-07-18 15:02:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 15:02:00",
+        "user": "alice",
+        "source_ip": "10.0.0.216",
+        "message": "Failed password for alice from 10.0.0.216 port 63872 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 85,
+    "summary": "1 events | users: bob | source IPs: 10.0.1.102",
+    "users": [
+      "bob"
+    ],
+    "source_ips": [
+      "10.0.1.102"
+    ],
+    "start": "2026-07-18 15:20:00",
+    "end": "2026-07-18 15:20:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 15:20:00",
+        "user": "bob",
+        "source_ip": "10.0.1.102",
+        "message": "Failed password for bob from 10.0.1.102 port 59608 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 86,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.180",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.180"
+    ],
+    "start": "2026-07-18 15:52:00",
+    "end": "2026-07-18 15:52:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 15:52:00",
+        "user": "alice",
+        "source_ip": "10.0.0.180",
+        "message": "Failed password for alice from 10.0.0.180 port 61043 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 87,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 16:28:00",
+    "end": "2026-07-18 16:28:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 16:28:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 88,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.166",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.166"
+    ],
+    "start": "2026-07-18 16:43:00",
+    "end": "2026-07-18 16:43:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 16:43:00",
+        "user": "admin",
+        "source_ip": "10.0.10.166",
+        "message": "Failed password for admin from 10.0.10.166 port 59121 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 89,
+    "summary": "2 events | users: dave | source IPs: 10.0.3.201, 10.0.3.249",
+    "users": [
+      "dave"
+    ],
+    "source_ips": [
+      "10.0.3.201",
+      "10.0.3.249"
+    ],
+    "start": "2026-07-18 19:18:00",
+    "end": "2026-07-18 19:21:00",
+    "event_count": 2,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 19:18:00",
+        "user": "dave",
+        "source_ip": "10.0.3.201",
+        "message": "Failed password for dave from 10.0.3.201 port 56256 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 19:21:00",
+        "user": "dave",
+        "source_ip": "10.0.3.249",
+        "message": "Failed password for dave from 10.0.3.249 port 63045 ssh2"
+      }
+    ],
+    "narrative": "1. Likely, an attacker attempted to gain unauthorized access by trying multiple password combinations on user 'dave's account using a brute force method from two different source IP addresses within the timeframe of July 18th, 2026, between 7:18 PM and 7:21 PM.\n\n2. The incident progresses through MITRE ATT&CK stage T1110 (Brute Force) - Credential Access as it involves direct attempts to guess passwords on a user account using automated tools or scripts, which is characteristic of this technique category within the credential access lifecycle.\n\n3. Confidence Level: High \u2013 The use of distinct source IPs and consecutive failed login attempts from different addresses strongly suggest an orchestrated brute force attack aimed at compromising credentials rather than a random attempt by multiple users or automated system processes that might not show such patterns.\n\n4. Recommended Next Action: Immediately lock the user account 'dave' to prevent further unauthorized access attempts and initiate an investigation into how these brute force attacks are being launched, including a review of firewall rules and intrusion detection/prevention system (IDPS) alerts for similar patterns. Additionally, consider implementing multi-factor authentication as it can significantly reduce the risk posed by credential stuffing or brute force attempts in future incidents."
+  },
+  {
+    "incident_id": 90,
+    "summary": "1 events | users: admin | source IPs: 10.0.10.213",
+    "users": [
+      "admin"
+    ],
+    "source_ips": [
+      "10.0.10.213"
+    ],
+    "start": "2026-07-18 19:42:00",
+    "end": "2026-07-18 19:42:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 19:42:00",
+        "user": "admin",
+        "source_ip": "10.0.10.213",
+        "message": "Failed password for admin from 10.0.10.213 port 53578 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 91,
+    "summary": "8 events | users: backup, deploy, ftpuser... | source IPs: 203.0.113.224",
+    "users": [
+      "backup",
+      "deploy",
+      "ftpuser",
+      "guest",
+      "oracle",
+      "postgres",
+      "root",
+      "test"
+    ],
+    "source_ips": [
+      "203.0.113.224"
+    ],
+    "start": "2026-07-18 20:19:00",
+    "end": "2026-07-18 20:19:22",
+    "event_count": 8,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      },
+      {
+        "technique_id": "T1087",
+        "technique_name": "Account Discovery",
+        "tactic": "Discovery"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 20:19:00",
+        "user": "deploy",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for deploy from 203.0.113.224 port 55310 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:02",
+        "user": "oracle",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for oracle from 203.0.113.224 port 51832 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:06",
+        "user": "guest",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for guest from 203.0.113.224 port 53923 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:09",
+        "user": "backup",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for backup from 203.0.113.224 port 64385 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:11",
+        "user": "test",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for test from 203.0.113.224 port 61991 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:13",
+        "user": "postgres",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for postgres from 203.0.113.224 port 62461 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:16",
+        "user": "root",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for root from 203.0.113.224 port 52103 ssh2"
+      },
+      {
+        "timestamp": "2026-07-18 20:19:22",
+        "user": "ftpuser",
+        "source_ip": "203.0.113.224",
+        "message": "Failed password for ftpuser from 203.0.113.224 port 52705 ssh2"
+      }
+    ],
+    "narrative": "1. Likely, an attacker targeted a specific server by using brute force to guess passwords of various user accounts on it between July 18th and 20:19 UTC; the attempts were made from one IP address (attacker's or compromised machine) located at 203.0.113.224, with multiple users being probed for their credentials in succession - starting with 'deploy', then moving on to other accounts including system and database user roles like 'oracle', followed by regular users such as 'guest' and 'test'.\n\nMITRE ATT&CK Stage(s): T1110 (Brute Force) -> T1087 (Account Discovery). The attacker likely started with a brute force attempt on the root account, then progressed to other accounts. \n\nConfidence Level: High - All events are from one source IP and involve multiple user credentials being probed in succession; this pattern is consistent with credential access attempts via password guessing (T1110) followed by discovery of valid usernames for further exploitation or escalation purposes, which aligns well with the T1087 technique.\n\nRecommended Next Action: The analyst should immediately isolate and secure the affected system to prevent any potential lateral movement within the network; conduct a thorough credential audit on all user accounts for signs of unauthorized access or changes, review firewall/IDS logs around that time frame for additional suspicious activities (e.g., unrecognized outbound connections), and consider implementing multi-factor authentication where possible to mitigate future brute force attempts."
+  },
+  {
+    "incident_id": 92,
+    "summary": "1 events | users: alice | source IPs: 10.0.0.197",
+    "users": [
+      "alice"
+    ],
+    "source_ips": [
+      "10.0.0.197"
+    ],
+    "start": "2026-07-18 20:56:00",
+    "end": "2026-07-18 20:56:00",
+    "event_count": 1,
+    "severity": "medium",
+    "mitre_techniques": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access"
+      }
+    ],
+    "events": [
+      {
+        "timestamp": "2026-07-18 20:56:00",
+        "user": "alice",
+        "source_ip": "10.0.0.197",
+        "message": "Failed password for alice from 10.0.0.197 port 59432 ssh2"
+      }
+    ],
+    "narrative": null
+  },
+  {
+    "incident_id": 93,
+    "summary": "1 events | users: n/a | source IPs: n/a",
+    "users": [
+      "unknown"
+    ],
+    "source_ips": [],
+    "start": "2026-07-18 21:57:00",
+    "end": "2026-07-18 21:57:00",
+    "event_count": 1,
+    "severity": "low",
+    "mitre_techniques": [],
+    "events": [
+      {
+        "timestamp": "2026-07-18 21:57:00",
+        "user": "unknown",
+        "source_ip": "",
+        "message": "Reloading system manager configuration."
+      }
+    ],
+    "narrative": null
+  }
+]

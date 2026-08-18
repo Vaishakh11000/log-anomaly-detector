@@ -1,0 +1,46 @@
+line_number,timestamp,user,scenario,instance,description
+3,2026-07-14T01:51:00,ftpuser,C,2,Account enumeration: many usernames probed from one source IP
+4,2026-07-14T01:51:05,postgres,C,2,Account enumeration: many usernames probed from one source IP
+5,2026-07-14T01:51:08,test,C,2,Account enumeration: many usernames probed from one source IP
+6,2026-07-14T01:51:11,backup,C,2,Account enumeration: many usernames probed from one source IP
+7,2026-07-14T01:51:17,deploy,C,2,Account enumeration: many usernames probed from one source IP
+8,2026-07-14T01:51:23,guest,C,2,Account enumeration: many usernames probed from one source IP
+9,2026-07-14T01:51:26,support,C,2,Account enumeration: many usernames probed from one source IP
+11,2026-07-14T02:14:00,alice,A,1,Rapid failed password attempts preceding compromise
+12,2026-07-14T02:14:01,alice,A,1,Rapid failed password attempts preceding compromise
+13,2026-07-14T02:14:02,alice,A,1,Rapid failed password attempts preceding compromise
+14,2026-07-14T02:14:03,alice,A,1,Brute-force succeeds
+15,2026-07-14T02:14:25,alice,A,1,Privilege escalation via sudo su
+16,2026-07-14T02:15:23,alice,A,1,Persistence: backdoor account added to sudo group
+18,2026-07-14T02:40:00,alice,A,3,Rapid failed password attempts preceding compromise
+19,2026-07-14T02:40:01,alice,A,3,Rapid failed password attempts preceding compromise
+20,2026-07-14T02:40:05,alice,A,3,Rapid failed password attempts preceding compromise
+21,2026-07-14T02:40:08,alice,A,3,Brute-force succeeds
+22,2026-07-14T02:40:50,alice,A,3,Privilege escalation via sudo su
+23,2026-07-14T02:41:17,alice,A,3,Persistence: backdoor account added to sudo group
+192,2026-07-15T09:29:00,admin,B,2,Baseline login from usual location
+193,2026-07-15T09:44:00,admin,B,2,Impossible travel: success from a different IP range 15 min later
+199,2026-07-15T10:17:00,oracle,C,1,Account enumeration: many usernames probed from one source IP
+200,2026-07-15T10:17:06,www-data,C,1,Account enumeration: many usernames probed from one source IP
+201,2026-07-15T10:17:11,test,C,1,Account enumeration: many usernames probed from one source IP
+202,2026-07-15T10:17:16,root,C,1,Account enumeration: many usernames probed from one source IP
+203,2026-07-15T10:17:20,support,C,1,Account enumeration: many usernames probed from one source IP
+204,2026-07-15T10:17:26,ftpuser,C,1,Account enumeration: many usernames probed from one source IP
+282,2026-07-15T18:34:00,admin,B,1,Baseline login from usual location
+284,2026-07-15T18:49:00,admin,B,1,Impossible travel: success from a different IP range 15 min later
+322,2026-07-16T02:55:00,bob,A,2,Rapid failed password attempts preceding compromise
+323,2026-07-16T02:55:03,bob,A,2,Rapid failed password attempts preceding compromise
+324,2026-07-16T02:55:06,bob,A,2,Rapid failed password attempts preceding compromise
+325,2026-07-16T02:55:09,bob,A,2,Brute-force succeeds
+326,2026-07-16T02:55:30,bob,A,2,Privilege escalation via sudo su
+327,2026-07-16T02:55:54,bob,A,2,Persistence: backdoor account added to sudo group
+339,2026-07-16T08:18:00,carol,B,3,Baseline login from usual location
+344,2026-07-16T08:33:00,carol,B,3,Impossible travel: success from a different IP range 15 min later
+719,2026-07-18T20:19:00,deploy,C,3,Account enumeration: many usernames probed from one source IP
+720,2026-07-18T20:19:02,oracle,C,3,Account enumeration: many usernames probed from one source IP
+721,2026-07-18T20:19:06,guest,C,3,Account enumeration: many usernames probed from one source IP
+722,2026-07-18T20:19:09,backup,C,3,Account enumeration: many usernames probed from one source IP
+723,2026-07-18T20:19:11,test,C,3,Account enumeration: many usernames probed from one source IP
+724,2026-07-18T20:19:13,postgres,C,3,Account enumeration: many usernames probed from one source IP
+725,2026-07-18T20:19:16,root,C,3,Account enumeration: many usernames probed from one source IP
+726,2026-07-18T20:19:22,ftpuser,C,3,Account enumeration: many usernames probed from one source IP

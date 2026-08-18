@@ -1,0 +1,883 @@
+{
+  "detectors": {
+    "rules": {
+      "tp": 203,
+      "fp": 0,
+      "fn": 30,
+      "flagged": 203,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 30,
+      "precision": 1.0,
+      "recall": 0.871,
+      "f1": 0.931,
+      "instance_detection_rate": 0.667,
+      "per_scenario": {
+        "A": {
+          "tp": 100,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 0,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 0,
+          "line_detection_rate": 0.0,
+          "instance_detection_rate": 0.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "rules_travel": {
+      "tp": 218,
+      "fp": 1,
+      "fn": 15,
+      "flagged": 219,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.995,
+      "recall": 0.936,
+      "f1": 0.965,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 100,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "embeddings": {
+      "tp": 185,
+      "fp": 498,
+      "fn": 48,
+      "flagged": 683,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 30,
+      "precision": 0.271,
+      "recall": 0.794,
+      "f1": 0.404,
+      "instance_detection_rate": 0.667,
+      "per_scenario": {
+        "A": {
+          "tp": 82,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.82,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 0,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 0,
+          "line_detection_rate": 0.0,
+          "instance_detection_rate": 0.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "travel_rule": {
+      "tp": 15,
+      "fp": 1,
+      "fn": 218,
+      "flagged": 16,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 15,
+      "precision": 0.938,
+      "recall": 0.064,
+      "f1": 0.12,
+      "instance_detection_rate": 0.333,
+      "per_scenario": {
+        "A": {
+          "tp": 0,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 0,
+          "line_detection_rate": 0.0,
+          "instance_detection_rate": 0.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 0,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 0,
+          "line_detection_rate": 0.0,
+          "instance_detection_rate": 0.0
+        }
+      }
+    },
+    "full": {
+      "tp": 200,
+      "fp": 499,
+      "fn": 33,
+      "flagged": 699,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.286,
+      "recall": 0.858,
+      "f1": 0.429,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 82,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.82,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    }
+  },
+  "camouflage": {
+    "mimicry": {
+      "rules": {
+        "tp": 173,
+        "fp": 0,
+        "fn": 60,
+        "flagged": 173,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 30,
+        "precision": 1.0,
+        "recall": 0.742,
+        "f1": 0.852,
+        "instance_detection_rate": 0.667,
+        "per_scenario": {
+          "A": {
+            "tp": 70,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.7,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 103,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          }
+        }
+      },
+      "rules_travel": {
+        "tp": 188,
+        "fp": 1,
+        "fn": 45,
+        "flagged": 189,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 45,
+        "precision": 0.995,
+        "recall": 0.807,
+        "f1": 0.891,
+        "instance_detection_rate": 1.0,
+        "per_scenario": {
+          "A": {
+            "tp": 70,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.7,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 15,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.5,
+            "instance_detection_rate": 1.0
+          },
+          "C": {
+            "tp": 103,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          }
+        }
+      },
+      "embeddings": {
+        "tp": 162,
+        "fp": 498,
+        "fn": 71,
+        "flagged": 660,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 30,
+        "precision": 0.245,
+        "recall": 0.695,
+        "f1": 0.363,
+        "instance_detection_rate": 0.667,
+        "per_scenario": {
+          "A": {
+            "tp": 70,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.7,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 92,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.893,
+            "instance_detection_rate": 1.0
+          }
+        }
+      },
+      "full": {
+        "tp": 177,
+        "fp": 499,
+        "fn": 56,
+        "flagged": 676,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 45,
+        "precision": 0.262,
+        "recall": 0.76,
+        "f1": 0.389,
+        "instance_detection_rate": 1.0,
+        "per_scenario": {
+          "A": {
+            "tp": 70,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.7,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 15,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.5,
+            "instance_detection_rate": 1.0
+          },
+          "C": {
+            "tp": 92,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.893,
+            "instance_detection_rate": 1.0
+          }
+        }
+      }
+    },
+    "rephrase": {
+      "rules": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 218,
+        "flagged": 15,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 15,
+        "precision": 1.0,
+        "recall": 0.064,
+        "f1": 0.121,
+        "instance_detection_rate": 0.333,
+        "per_scenario": {
+          "A": {
+            "tp": 15,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.15,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 0,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          }
+        }
+      },
+      "rules_travel": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 218,
+        "flagged": 15,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 15,
+        "precision": 1.0,
+        "recall": 0.064,
+        "f1": 0.121,
+        "instance_detection_rate": 0.333,
+        "per_scenario": {
+          "A": {
+            "tp": 15,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.15,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 0,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          }
+        }
+      },
+      "embeddings": {
+        "tp": 232,
+        "fp": 489,
+        "fn": 1,
+        "flagged": 721,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 45,
+        "precision": 0.322,
+        "recall": 0.996,
+        "f1": 0.486,
+        "instance_detection_rate": 1.0,
+        "per_scenario": {
+          "A": {
+            "tp": 100,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 30,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          },
+          "C": {
+            "tp": 102,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.99,
+            "instance_detection_rate": 1.0
+          }
+        }
+      },
+      "full": {
+        "tp": 232,
+        "fp": 489,
+        "fn": 1,
+        "flagged": 721,
+        "attack_lines": 233,
+        "instances": 45,
+        "instances_detected": 45,
+        "precision": 0.322,
+        "recall": 0.996,
+        "f1": 0.486,
+        "instance_detection_rate": 1.0,
+        "per_scenario": {
+          "A": {
+            "tp": 100,
+            "attack_lines": 100,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 30,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 1.0,
+            "instance_detection_rate": 1.0
+          },
+          "C": {
+            "tp": 102,
+            "attack_lines": 103,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.99,
+            "instance_detection_rate": 1.0
+          }
+        }
+      }
+    },
+    "realistic-combo": {
+      "rules": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 170,
+        "flagged": 0,
+        "attack_lines": 170,
+        "instances": 45,
+        "instances_detected": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "instance_detection_rate": 0.0,
+        "per_scenario": {
+          "A": {
+            "tp": 0,
+            "attack_lines": 75,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 0,
+            "attack_lines": 65,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          }
+        }
+      },
+      "rules_travel": {
+        "tp": 11,
+        "fp": 9,
+        "fn": 159,
+        "flagged": 20,
+        "attack_lines": 170,
+        "instances": 45,
+        "instances_detected": 11,
+        "precision": 0.55,
+        "recall": 0.065,
+        "f1": 0.116,
+        "instance_detection_rate": 0.244,
+        "per_scenario": {
+          "A": {
+            "tp": 0,
+            "attack_lines": 75,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "B": {
+            "tp": 11,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 11,
+            "line_detection_rate": 0.367,
+            "instance_detection_rate": 0.733
+          },
+          "C": {
+            "tp": 0,
+            "attack_lines": 65,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          }
+        }
+      },
+      "embeddings": {
+        "tp": 121,
+        "fp": 562,
+        "fn": 49,
+        "flagged": 683,
+        "attack_lines": 170,
+        "instances": 45,
+        "instances_detected": 30,
+        "precision": 0.177,
+        "recall": 0.712,
+        "f1": 0.284,
+        "instance_detection_rate": 0.667,
+        "per_scenario": {
+          "A": {
+            "tp": 59,
+            "attack_lines": 75,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.787,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 0,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 0,
+            "line_detection_rate": 0.0,
+            "instance_detection_rate": 0.0
+          },
+          "C": {
+            "tp": 62,
+            "attack_lines": 65,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.954,
+            "instance_detection_rate": 1.0
+          }
+        }
+      },
+      "full": {
+        "tp": 132,
+        "fp": 571,
+        "fn": 38,
+        "flagged": 703,
+        "attack_lines": 170,
+        "instances": 45,
+        "instances_detected": 41,
+        "precision": 0.188,
+        "recall": 0.776,
+        "f1": 0.302,
+        "instance_detection_rate": 0.911,
+        "per_scenario": {
+          "A": {
+            "tp": 59,
+            "attack_lines": 75,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.787,
+            "instance_detection_rate": 1.0
+          },
+          "B": {
+            "tp": 11,
+            "attack_lines": 30,
+            "instances": 15,
+            "instances_detected": 11,
+            "line_detection_rate": 0.367,
+            "instance_detection_rate": 0.733
+          },
+          "C": {
+            "tp": 62,
+            "attack_lines": 65,
+            "instances": 15,
+            "instances_detected": 15,
+            "line_detection_rate": 0.954,
+            "instance_detection_rate": 1.0
+          }
+        }
+      }
+    }
+  },
+  "sweep": {
+    "0.05": {
+      "tp": 61,
+      "fp": 54,
+      "fn": 172,
+      "flagged": 115,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 38,
+      "precision": 0.53,
+      "recall": 0.262,
+      "f1": 0.351,
+      "instance_detection_rate": 0.844,
+      "per_scenario": {
+        "A": {
+          "tp": 30,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.3,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 16,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 8,
+          "line_detection_rate": 0.155,
+          "instance_detection_rate": 0.533
+        }
+      }
+    },
+    "0.1": {
+      "tp": 92,
+      "fp": 205,
+      "fn": 141,
+      "flagged": 297,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.31,
+      "recall": 0.395,
+      "f1": 0.347,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 30,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.3,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 47,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.456,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "0.15": {
+      "tp": 150,
+      "fp": 305,
+      "fn": 83,
+      "flagged": 455,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.33,
+      "recall": 0.644,
+      "f1": 0.436,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 42,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.42,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 93,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.903,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "0.2": {
+      "tp": 200,
+      "fp": 499,
+      "fn": 33,
+      "flagged": 699,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.286,
+      "recall": 0.858,
+      "f1": 0.429,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 82,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.82,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    },
+    "0.25": {
+      "tp": 200,
+      "fp": 550,
+      "fn": 33,
+      "flagged": 750,
+      "attack_lines": 233,
+      "instances": 45,
+      "instances_detected": 45,
+      "precision": 0.267,
+      "recall": 0.858,
+      "f1": 0.407,
+      "instance_detection_rate": 1.0,
+      "per_scenario": {
+        "A": {
+          "tp": 82,
+          "attack_lines": 100,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.82,
+          "instance_detection_rate": 1.0
+        },
+        "B": {
+          "tp": 15,
+          "attack_lines": 30,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 0.5,
+          "instance_detection_rate": 1.0
+        },
+        "C": {
+          "tp": 103,
+          "attack_lines": 103,
+          "instances": 15,
+          "instances_detected": 15,
+          "line_detection_rate": 1.0,
+          "instance_detection_rate": 1.0
+        }
+      }
+    }
+  },
+  "rule_counts": {
+    "brute_force": 70,
+    "enumeration": 103,
+    "privileged_command": 30
+  },
+  "volume": {
+    "log_lines": 751,
+    "rule_incidents": 8,
+    "full_incidents": 103
+  },
+  "n_seeds": 5
+}

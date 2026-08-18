@@ -1,0 +1,751 @@
+Jul 14 00:39:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 14 01:15:00 server1 CRON[1982]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 01:51:00 server1 sshd[1111]: Failed password for ftpuser from 203.0.113.212 port 60738 ssh2
+Jul 14 01:51:05 server1 sshd[1119]: Failed password for postgres from 203.0.113.212 port 64494 ssh2
+Jul 14 01:51:08 server1 sshd[1122]: Failed password for test from 203.0.113.212 port 54339 ssh2
+Jul 14 01:51:11 server1 sshd[1131]: Failed password for backup from 203.0.113.212 port 62205 ssh2
+Jul 14 01:51:17 server1 sshd[1138]: Failed password for deploy from 203.0.113.212 port 54304 ssh2
+Jul 14 01:51:23 server1 sshd[1144]: Failed password for guest from 203.0.113.212 port 56543 ssh2
+Jul 14 01:51:26 server1 sshd[1153]: Failed password for support from 203.0.113.212 port 52266 ssh2
+Jul 14 02:02:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 14 02:14:00 server1 sshd[1002]: Failed password for alice from 172.16.5.191 port 54506 ssh2
+Jul 14 02:14:01 server1 sshd[1009]: Failed password for alice from 172.16.5.191 port 54506 ssh2
+Jul 14 02:14:02 server1 sshd[1010]: Failed password for alice from 172.16.5.191 port 54506 ssh2
+Jul 14 02:14:03 server1 sshd[1014]: Accepted password for alice from 172.16.5.191 port 54506 ssh2
+Jul 14 02:14:25 server1 sudo[1023]: user=alice : COMMAND=/bin/su root
+Jul 14 02:15:23 server1 usermod[1024]: user=alice added new user 'backdoor01' to group sudo
+Jul 14 02:23:00 server1 CRON[2779]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 02:40:00 server1 sshd[1160]: Failed password for alice from 172.16.5.222 port 51796 ssh2
+Jul 14 02:40:01 server1 sshd[1167]: Failed password for alice from 172.16.5.222 port 51796 ssh2
+Jul 14 02:40:05 server1 sshd[1175]: Failed password for alice from 172.16.5.222 port 51796 ssh2
+Jul 14 02:40:08 server1 sshd[1184]: Accepted password for alice from 172.16.5.222 port 51796 ssh2
+Jul 14 02:40:50 server1 sudo[1185]: user=alice : COMMAND=/bin/su root
+Jul 14 02:41:17 server1 usermod[1194]: user=alice added new user 'backdoor03' to group sudo
+Jul 14 03:00:00 server1 CRON[2934]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 03:03:00 server1 CRON[1288]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 03:04:00 server1 CRON[1324]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 03:15:00 server1 CRON[1275]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 04:11:00 server1 CRON[2877]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 04:53:00 server1 systemd[1]: Started Session 91 of user alice.
+Jul 14 05:08:00 server1 CRON[1923]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 14 05:41:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 14 06:30:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 14 06:33:00 server1 systemd[1]: Started Session 38 of user dave.
+Jul 14 06:53:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 14 07:03:23 server1 sshd[1959]: Accepted password for dave from 10.0.3.214 port 54703 ssh2
+Jul 14 07:03:24 server1 sshd[1959]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 07:07:59 server1 sshd[2776]: Accepted password for dave from 10.0.3.221 port 52588 ssh2
+Jul 14 07:08:00 server1 sshd[2776]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 07:13:00 server1 CRON[2724]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 07:16:13 server1 sshd[2842]: Accepted password for alice from 10.0.0.12 port 50990 ssh2
+Jul 14 07:16:14 server1 sshd[2842]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 07:17:55 server1 sshd[2743]: Accepted password for dave from 10.0.3.169 port 52078 ssh2
+Jul 14 07:17:56 server1 sshd[2743]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 07:25:04 server1 sshd[2884]: Accepted password for admin from 10.0.10.226 port 57620 ssh2
+Jul 14 07:25:05 server1 sshd[2884]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 14 07:44:00 server1 systemd[1]: Started Session 31 of user dave.
+Jul 14 07:51:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 14 07:53:00 server1 sshd[2405]: Failed password for alice from 10.0.0.142 port 64792 ssh2
+Jul 14 08:08:17 server1 sshd[1843]: Accepted password for bob from 10.0.1.161 port 60372 ssh2
+Jul 14 08:08:18 server1 sshd[1843]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 14 08:21:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 14 08:27:06 server1 sshd[1866]: Accepted password for alice from 10.0.0.192 port 62104 ssh2
+Jul 14 08:27:07 server1 sshd[1866]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 08:38:00 server1 CRON[2731]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 08:42:23 server1 sshd[1959]: pam_unix(sshd:session): session closed for user dave
+Jul 14 08:47:33 server1 sshd[1894]: Accepted password for alice from 10.0.0.57 port 56163 ssh2
+Jul 14 08:47:34 server1 sshd[1894]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 08:53:46 server1 sshd[2635]: Accepted password for alice from 10.0.0.38 port 55707 ssh2
+Jul 14 08:53:47 server1 sshd[2635]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 09:26:00 server1 sshd[1292]: Failed password for bob from 10.0.1.126 port 57886 ssh2
+Jul 14 09:30:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 14 09:37:16 server1 sshd[1381]: Accepted password for carol from 10.0.2.11 port 51776 ssh2
+Jul 14 09:37:17 server1 sshd[1381]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 14 09:59:00 server1 sshd[2946]: Failed password for alice from 10.0.0.148 port 57096 ssh2
+Jul 14 10:32:47 server1 sshd[2630]: Accepted password for carol from 10.0.2.134 port 59142 ssh2
+Jul 14 10:32:48 server1 sshd[2630]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 14 10:57:41 server1 sshd[2939]: Accepted password for alice from 10.0.0.115 port 63259 ssh2
+Jul 14 10:57:42 server1 sshd[2939]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 11:07:00 server1 sshd[1341]: Failed password for bob from 10.0.1.229 port 51753 ssh2
+Jul 14 11:10:33 server1 sshd[1894]: pam_unix(sshd:session): session closed for user alice
+Jul 14 11:19:59 server1 sshd[2776]: pam_unix(sshd:session): session closed for user dave
+Jul 14 11:26:46 server1 sshd[2635]: pam_unix(sshd:session): session closed for user alice
+Jul 14 11:41:13 server1 sshd[2200]: Accepted password for admin from 10.0.10.198 port 59373 ssh2
+Jul 14 11:41:14 server1 sshd[2200]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 14 12:01:37 server1 sshd[1265]: Accepted password for alice from 10.0.0.143 port 53770 ssh2
+Jul 14 12:01:38 server1 sshd[1265]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 12:48:00 server1 sshd[2572]: Failed password for dave from 10.0.3.71 port 51674 ssh2
+Jul 14 12:59:28 server1 sshd[2322]: Accepted password for alice from 10.0.0.169 port 54201 ssh2
+Jul 14 12:59:29 server1 sshd[2322]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 13:04:16 server1 sshd[1381]: pam_unix(sshd:session): session closed for user carol
+Jul 14 13:12:13 server1 sshd[2200]: pam_unix(sshd:session): session closed for user admin
+Jul 14 13:29:00 server1 CRON[2414]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 13:31:03 server1 sshd[2904]: Accepted password for bob from 10.0.1.250 port 52332 ssh2
+Jul 14 13:31:04 server1 sshd[2904]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 14 13:35:30 server1 sshd[2533]: Accepted password for dave from 10.0.3.16 port 60432 ssh2
+Jul 14 13:35:31 server1 sshd[2533]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 13:37:55 server1 sshd[2743]: pam_unix(sshd:session): session closed for user dave
+Jul 14 13:38:00 server1 systemd[1]: Started Session 38 of user admin.
+Jul 14 13:45:50 server1 sshd[2569]: Accepted password for bob from 10.0.1.164 port 52527 ssh2
+Jul 14 13:45:51 server1 sshd[2569]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 14 14:01:13 server1 sshd[2842]: pam_unix(sshd:session): session closed for user alice
+Jul 14 14:04:07 server1 sshd[2077]: Accepted password for admin from 10.0.10.216 port 64829 ssh2
+Jul 14 14:04:08 server1 sshd[2077]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 14 14:04:41 server1 sshd[2939]: pam_unix(sshd:session): session closed for user alice
+Jul 14 14:07:00 server1 sshd[1779]: Failed password for carol from 10.0.2.26 port 53846 ssh2
+Jul 14 14:11:00 server1 CRON[1482]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 14:29:13 server1 sshd[2210]: Accepted password for dave from 10.0.3.89 port 59939 ssh2
+Jul 14 14:29:14 server1 sshd[2210]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 14:50:50 server1 sshd[2569]: pam_unix(sshd:session): session closed for user bob
+Jul 14 15:01:47 server1 sshd[2630]: pam_unix(sshd:session): session closed for user carol
+Jul 14 15:05:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 14 15:24:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 14 15:24:26 server1 sshd[2693]: Accepted password for bob from 10.0.1.154 port 52258 ssh2
+Jul 14 15:24:27 server1 sshd[2693]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 14 15:33:50 server1 sshd[2854]: Accepted password for carol from 10.0.2.212 port 61809 ssh2
+Jul 14 15:33:51 server1 sshd[2854]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 14 15:35:32 server1 sshd[2573]: Accepted password for dave from 10.0.3.106 port 51692 ssh2
+Jul 14 15:35:33 server1 sshd[2573]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 15:44:07 server1 sshd[2077]: pam_unix(sshd:session): session closed for user admin
+Jul 14 16:20:00 server1 sshd[1388]: Failed password for carol from 10.0.2.171 port 63893 ssh2
+Jul 14 16:28:03 server1 sshd[2904]: pam_unix(sshd:session): session closed for user bob
+Jul 14 16:40:00 server1 CRON[2283]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 16:49:59 server1 sshd[2439]: Accepted password for dave from 10.0.3.228 port 64566 ssh2
+Jul 14 16:50:00 server1 sshd[2439]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 16:59:00 server1 systemd[1]: Started Session 56 of user carol.
+Jul 14 17:16:45 server1 sshd[2365]: Accepted password for dave from 10.0.3.49 port 50230 ssh2
+Jul 14 17:16:46 server1 sshd[2365]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 17:24:18 server1 sshd[1996]: Accepted password for admin from 10.0.10.66 port 61857 ssh2
+Jul 14 17:24:19 server1 sshd[1996]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 14 17:46:00 server1 sshd[2438]: Failed password for dave from 10.0.3.141 port 56948 ssh2
+Jul 14 17:47:00 server1 CRON[2340]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 17:55:59 server1 sshd[2439]: pam_unix(sshd:session): session closed for user dave
+Jul 14 18:16:28 server1 sshd[2322]: pam_unix(sshd:session): session closed for user alice
+Jul 14 18:20:50 server1 sshd[2854]: pam_unix(sshd:session): session closed for user carol
+Jul 14 18:33:00 server1 CRON[1320]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 14 18:40:00 server1 CRON[1554]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 14 18:41:37 server1 sshd[1265]: pam_unix(sshd:session): session closed for user alice
+Jul 14 18:51:06 server1 sshd[2793]: Accepted password for alice from 10.0.0.28 port 55133 ssh2
+Jul 14 18:51:07 server1 sshd[2793]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 19:15:45 server1 sshd[1639]: Accepted password for admin from 10.0.10.42 port 55091 ssh2
+Jul 14 19:15:46 server1 sshd[1639]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 14 19:27:00 server1 sshd[1430]: Failed password for alice from 10.0.0.58 port 52881 ssh2
+Jul 14 19:41:23 server1 sshd[2138]: Accepted password for bob from 10.0.1.94 port 56272 ssh2
+Jul 14 19:41:24 server1 sshd[2138]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 14 20:04:26 server1 sshd[2693]: pam_unix(sshd:session): session closed for user bob
+Jul 14 20:17:02 server1 sshd[1349]: Accepted password for dave from 10.0.3.2 port 55464 ssh2
+Jul 14 20:17:03 server1 sshd[1349]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 14 20:21:04 server1 sshd[1270]: Accepted password for alice from 10.0.0.133 port 53899 ssh2
+Jul 14 20:21:05 server1 sshd[1270]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 14 20:37:37 server1 sshd[1662]: Accepted password for carol from 10.0.2.170 port 58022 ssh2
+Jul 14 20:37:38 server1 sshd[1662]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 14 20:40:32 server1 sshd[2573]: pam_unix(sshd:session): session closed for user dave
+Jul 14 20:41:00 server1 systemd[1]: Started Session 58 of user dave.
+Jul 14 20:43:00 server1 CRON[1706]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 14 20:45:00 server1 CRON[1714]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 20:49:13 server1 sshd[2210]: pam_unix(sshd:session): session closed for user dave
+Jul 14 20:50:00 server1 CRON[2535]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 14 22:55:04 server1 sshd[1270]: pam_unix(sshd:session): session closed for user alice
+Jul 14 23:06:18 server1 sshd[1996]: pam_unix(sshd:session): session closed for user admin
+Jul 14 23:20:45 server1 sshd[1639]: pam_unix(sshd:session): session closed for user admin
+Jul 14 23:27:02 server1 sshd[1349]: pam_unix(sshd:session): session closed for user dave
+Jul 14 23:40:00 server1 CRON[2589]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 14 23:44:00 server1 CRON[2786]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 14 23:46:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 00:16:00 server1 CRON[2372]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 00:59:37 server1 sshd[1662]: pam_unix(sshd:session): session closed for user carol
+Jul 15 01:00:00 server1 CRON[1914]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 01:18:00 server1 CRON[2231]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 01:20:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 01:36:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 01:53:00 server1 CRON[2348]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 02:09:23 server1 sshd[2138]: pam_unix(sshd:session): session closed for user bob
+Jul 15 02:19:00 server1 CRON[2548]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 02:25:00 server1 CRON[1924]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 02:28:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 15 02:33:00 server1 CRON[2827]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 04:05:00 server1 systemd[1]: Started Session 51 of user carol.
+Jul 15 04:32:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 05:20:00 server1 CRON[2413]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 05:47:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 05:55:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 07:00:00 server1 sshd[2350]: Failed password for carol from 10.0.2.78 port 59305 ssh2
+Jul 15 07:14:34 server1 sshd[2899]: Accepted password for dave from 10.0.3.90 port 60419 ssh2
+Jul 15 07:14:35 server1 sshd[2899]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 07:16:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 15 07:23:35 server1 sshd[2168]: Accepted password for dave from 10.0.3.148 port 56044 ssh2
+Jul 15 07:23:36 server1 sshd[2168]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 07:40:00 server1 CRON[1742]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 07:40:00 server1 CRON[2966]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 07:43:05 server1 sshd[1901]: Accepted password for admin from 10.0.10.71 port 57259 ssh2
+Jul 15 07:43:06 server1 sshd[1901]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 15 08:03:00 server1 sshd[1589]: Failed password for bob from 10.0.1.44 port 62986 ssh2
+Jul 15 08:11:00 server1 CRON[1598]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 08:21:00 server1 CRON[1519]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 09:00:22 server1 sshd[1823]: Accepted password for alice from 10.0.0.204 port 62917 ssh2
+Jul 15 09:00:23 server1 sshd[1823]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 09:15:11 server1 sshd[1575]: Accepted password for alice from 10.0.0.143 port 51229 ssh2
+Jul 15 09:15:12 server1 sshd[1575]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 09:19:00 server1 sshd[1551]: Accepted password for carol from 10.0.2.183 port 58751 ssh2
+Jul 15 09:19:01 server1 sshd[1551]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 15 09:20:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 09:29:00 server1 sshd[1097]: Accepted password for admin from 10.0.10.99 port 60485 ssh2
+Jul 15 09:44:00 server1 sshd[1103]: Accepted password for admin from 198.51.100.238 port 53598 ssh2
+Jul 15 09:48:07 server1 sshd[2816]: Accepted password for alice from 10.0.0.152 port 61960 ssh2
+Jul 15 09:48:08 server1 sshd[2816]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 09:50:00 server1 CRON[1743]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 10:04:00 server1 sshd[1818]: Failed password for admin from 10.0.10.214 port 62536 ssh2
+Jul 15 10:11:22 server1 sshd[1823]: pam_unix(sshd:session): session closed for user alice
+Jul 15 10:17:00 server1 sshd[1036]: Failed password for oracle from 192.0.2.110 port 55881 ssh2
+Jul 15 10:17:06 server1 sshd[1037]: Failed password for www-data from 192.0.2.110 port 54333 ssh2
+Jul 15 10:17:11 server1 sshd[1039]: Failed password for test from 192.0.2.110 port 58785 ssh2
+Jul 15 10:17:16 server1 sshd[1048]: Failed password for root from 192.0.2.110 port 51291 ssh2
+Jul 15 10:17:20 server1 sshd[1054]: Failed password for support from 192.0.2.110 port 63588 ssh2
+Jul 15 10:17:26 server1 sshd[1056]: Failed password for ftpuser from 192.0.2.110 port 53150 ssh2
+Jul 15 10:35:38 server1 sshd[2821]: Accepted password for alice from 10.0.0.155 port 61815 ssh2
+Jul 15 10:35:39 server1 sshd[2821]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 10:36:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 10:45:21 server1 sshd[1346]: Accepted password for admin from 10.0.10.54 port 61263 ssh2
+Jul 15 10:45:22 server1 sshd[1346]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 15 10:49:00 server1 CRON[1819]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 10:53:00 server1 CRON[2193]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 10:54:00 server1 sshd[1551]: pam_unix(sshd:session): session closed for user carol
+Jul 15 11:05:15 server1 sshd[1561]: Accepted password for admin from 10.0.10.32 port 59143 ssh2
+Jul 15 11:05:16 server1 sshd[1561]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 15 11:12:11 server1 sshd[1952]: Accepted password for bob from 10.0.1.156 port 52504 ssh2
+Jul 15 11:12:12 server1 sshd[1952]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 11:42:25 server1 sshd[1609]: Accepted password for dave from 10.0.3.210 port 62460 ssh2
+Jul 15 11:42:26 server1 sshd[1609]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 11:46:37 server1 sshd[1548]: Accepted password for dave from 10.0.3.196 port 58595 ssh2
+Jul 15 11:46:38 server1 sshd[1548]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 11:59:00 server1 CRON[2121]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 12:01:00 server1 CRON[2662]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 12:09:05 server1 sshd[1901]: pam_unix(sshd:session): session closed for user admin
+Jul 15 12:26:00 server1 CRON[1852]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 12:27:26 server1 sshd[1271]: Accepted password for dave from 10.0.3.121 port 64153 ssh2
+Jul 15 12:27:27 server1 sshd[1271]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 12:33:57 server1 sshd[2189]: Accepted password for bob from 10.0.1.74 port 63859 ssh2
+Jul 15 12:33:58 server1 sshd[2189]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 12:39:44 server1 sshd[1693]: Accepted password for carol from 10.0.2.103 port 60646 ssh2
+Jul 15 12:39:45 server1 sshd[1693]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 15 12:43:40 server1 sshd[2936]: Accepted password for dave from 10.0.3.242 port 60562 ssh2
+Jul 15 12:43:41 server1 sshd[2936]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 12:50:00 server1 sshd[2256]: Failed password for dave from 10.0.3.88 port 59139 ssh2
+Jul 15 13:02:00 server1 CRON[1674]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 13:02:25 server1 sshd[1609]: pam_unix(sshd:session): session closed for user dave
+Jul 15 13:09:26 server1 sshd[2290]: Accepted password for carol from 10.0.2.178 port 53340 ssh2
+Jul 15 13:09:27 server1 sshd[2290]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 15 13:21:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 13:32:02 server1 sshd[2259]: Accepted password for admin from 10.0.10.13 port 50637 ssh2
+Jul 15 13:32:03 server1 sshd[2259]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 15 13:36:53 server1 sshd[2493]: Accepted password for bob from 10.0.1.64 port 58180 ssh2
+Jul 15 13:36:54 server1 sshd[2493]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 13:39:00 server1 CRON[2809]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 13:59:11 server1 sshd[1575]: pam_unix(sshd:session): session closed for user alice
+Jul 15 14:07:00 server1 sshd[1642]: Failed password for alice from 10.0.0.167 port 63633 ssh2
+Jul 15 14:08:07 server1 sshd[2816]: pam_unix(sshd:session): session closed for user alice
+Jul 15 14:09:04 server1 sshd[2585]: Accepted password for carol from 10.0.2.44 port 57121 ssh2
+Jul 15 14:09:05 server1 sshd[2585]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 15 14:20:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 14:23:03 server1 sshd[2506]: Accepted password for admin from 10.0.10.160 port 60448 ssh2
+Jul 15 14:23:04 server1 sshd[2506]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 15 14:39:54 server1 sshd[1421]: Accepted password for bob from 10.0.1.198 port 51193 ssh2
+Jul 15 14:39:55 server1 sshd[1421]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 14:42:21 server1 sshd[1346]: pam_unix(sshd:session): session closed for user admin
+Jul 15 15:08:00 server1 sshd[2429]: Failed password for dave from 10.0.3.188 port 53648 ssh2
+Jul 15 15:09:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 15 15:09:15 server1 sshd[2527]: Accepted password for alice from 10.0.0.51 port 60154 ssh2
+Jul 15 15:09:16 server1 sshd[2527]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 15:11:00 server1 sshd[2655]: Failed password for bob from 10.0.1.143 port 52623 ssh2
+Jul 15 15:23:03 server1 sshd[2506]: pam_unix(sshd:session): session closed for user admin
+Jul 15 15:25:00 server1 systemd[1]: Started Session 84 of user bob.
+Jul 15 15:49:00 server1 CRON[2898]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 15:57:00 server1 CRON[2024]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 16:19:15 server1 sshd[1561]: pam_unix(sshd:session): session closed for user admin
+Jul 15 16:29:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 15 16:41:40 server1 sshd[2936]: pam_unix(sshd:session): session closed for user dave
+Jul 15 16:47:34 server1 sshd[1309]: Accepted password for alice from 10.0.0.17 port 62254 ssh2
+Jul 15 16:47:35 server1 sshd[1309]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 17:23:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 17:31:00 server1 CRON[2451]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 17:33:14 server1 sshd[2445]: Accepted password for bob from 10.0.1.107 port 54923 ssh2
+Jul 15 17:33:15 server1 sshd[2445]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 17:38:38 server1 sshd[2466]: Accepted password for dave from 10.0.3.12 port 64313 ssh2
+Jul 15 17:38:39 server1 sshd[2466]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 17:43:11 server1 sshd[1952]: pam_unix(sshd:session): session closed for user bob
+Jul 15 17:44:00 server1 sshd[1999]: Failed password for carol from 10.0.2.171 port 56421 ssh2
+Jul 15 17:55:15 server1 sshd[1315]: Accepted password for alice from 10.0.0.105 port 51964 ssh2
+Jul 15 17:55:16 server1 sshd[1315]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 18:26:15 server1 sshd[2527]: pam_unix(sshd:session): session closed for user alice
+Jul 15 18:30:00 server1 systemd[1]: Started Session 53 of user dave.
+Jul 15 18:33:26 server1 sshd[1271]: pam_unix(sshd:session): session closed for user dave
+Jul 15 18:34:00 server1 sshd[1029]: Accepted password for admin from 10.0.10.109 port 59654 ssh2
+Jul 15 18:35:00 server1 CRON[1358]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 18:49:00 server1 sshd[1030]: Accepted password for admin from 203.0.113.116 port 63261 ssh2
+Jul 15 18:59:04 server1 sshd[2585]: pam_unix(sshd:session): session closed for user carol
+Jul 15 19:07:26 server1 sshd[2290]: pam_unix(sshd:session): session closed for user carol
+Jul 15 19:08:57 server1 sshd[2189]: pam_unix(sshd:session): session closed for user bob
+Jul 15 19:18:47 server1 sshd[1760]: Accepted password for dave from 10.0.3.224 port 55549 ssh2
+Jul 15 19:18:48 server1 sshd[1760]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 15 19:34:15 server1 sshd[1315]: pam_unix(sshd:session): session closed for user alice
+Jul 15 19:34:30 server1 sshd[2455]: Accepted password for bob from 10.0.1.63 port 63915 ssh2
+Jul 15 19:34:31 server1 sshd[2455]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 15 19:48:14 server1 sshd[2712]: Accepted password for alice from 10.0.0.76 port 50535 ssh2
+Jul 15 19:48:15 server1 sshd[2712]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 15 19:49:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 15 19:55:02 server1 sshd[1362]: Accepted password for carol from 10.0.2.232 port 55862 ssh2
+Jul 15 19:55:03 server1 sshd[1362]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 15 19:57:53 server1 sshd[2493]: pam_unix(sshd:session): session closed for user bob
+Jul 15 20:27:47 server1 sshd[1760]: pam_unix(sshd:session): session closed for user dave
+Jul 15 20:43:00 server1 CRON[2795]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 21:15:54 server1 sshd[1421]: pam_unix(sshd:session): session closed for user bob
+Jul 15 21:28:00 server1 CRON[2787]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 21:42:00 server1 CRON[2092]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 15 21:47:00 server1 CRON[1788]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 15 21:55:00 server1 CRON[2675]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 15 22:17:34 server1 sshd[1309]: pam_unix(sshd:session): session closed for user alice
+Jul 15 22:30:00 server1 systemd[1]: Started Session 9 of user bob.
+Jul 15 22:44:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 15 22:58:14 server1 sshd[2712]: pam_unix(sshd:session): session closed for user alice
+Jul 15 23:24:38 server1 sshd[2466]: pam_unix(sshd:session): session closed for user dave
+Jul 15 23:29:14 server1 sshd[2445]: pam_unix(sshd:session): session closed for user bob
+Jul 15 23:38:00 server1 CRON[2392]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 00:09:00 server1 CRON[2137]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 00:21:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 16 00:42:00 server1 CRON[1332]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 01:15:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 01:42:00 server1 CRON[2380]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 01:43:30 server1 sshd[2455]: pam_unix(sshd:session): session closed for user bob
+Jul 16 01:59:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 02:01:02 server1 sshd[1362]: pam_unix(sshd:session): session closed for user carol
+Jul 16 02:41:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 16 02:55:00 server1 sshd[1063]: Failed password for bob from 172.16.5.22 port 64013 ssh2
+Jul 16 02:55:03 server1 sshd[1071]: Failed password for bob from 172.16.5.22 port 64013 ssh2
+Jul 16 02:55:06 server1 sshd[1074]: Failed password for bob from 172.16.5.22 port 64013 ssh2
+Jul 16 02:55:09 server1 sshd[1080]: Accepted password for bob from 172.16.5.22 port 64013 ssh2
+Jul 16 02:55:30 server1 sudo[1085]: user=bob : COMMAND=/bin/su root
+Jul 16 02:55:54 server1 usermod[1088]: user=bob added new user 'backdoor02' to group sudo
+Jul 16 04:15:00 server1 CRON[1721]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 04:34:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 16 04:36:00 server1 CRON[1887]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 04:36:00 server1 CRON[2768]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 05:06:00 server1 systemd[1]: Started Session 35 of user bob.
+Jul 16 05:52:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 16 06:39:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 16 07:47:00 server1 CRON[2479]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 07:54:26 server1 sshd[1506]: Accepted password for carol from 10.0.2.212 port 58031 ssh2
+Jul 16 07:54:27 server1 sshd[1506]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 16 08:03:00 server1 CRON[2976]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 08:18:00 server1 sshd[1199]: Accepted password for carol from 10.0.2.113 port 50053 ssh2
+Jul 16 08:22:27 server1 sshd[1909]: Accepted password for admin from 10.0.10.30 port 54640 ssh2
+Jul 16 08:22:28 server1 sshd[1909]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 08:32:40 server1 sshd[1950]: Accepted password for bob from 10.0.1.31 port 58693 ssh2
+Jul 16 08:32:41 server1 sshd[1950]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 16 08:33:00 server1 sshd[1202]: Accepted password for carol from 203.0.113.118 port 58201 ssh2
+Jul 16 09:15:00 server1 sshd[2982]: Failed password for bob from 10.0.1.153 port 55210 ssh2
+Jul 16 09:25:00 server1 sshd[2267]: Failed password for carol from 10.0.2.159 port 62113 ssh2
+Jul 16 09:49:00 server1 CRON[2304]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 10:01:42 server1 sshd[1368]: Accepted password for bob from 10.0.1.51 port 56528 ssh2
+Jul 16 10:01:43 server1 sshd[1368]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 16 10:09:42 server1 sshd[1874]: Accepted password for admin from 10.0.10.125 port 53674 ssh2
+Jul 16 10:09:43 server1 sshd[1874]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 10:25:00 server1 CRON[1393]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 10:27:37 server1 sshd[1941]: Accepted password for alice from 10.0.0.104 port 58584 ssh2
+Jul 16 10:27:38 server1 sshd[1941]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 11:09:00 server1 CRON[1860]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 11:24:27 server1 sshd[1909]: pam_unix(sshd:session): session closed for user admin
+Jul 16 11:28:15 server1 sshd[2213]: Accepted password for alice from 10.0.0.38 port 51586 ssh2
+Jul 16 11:28:16 server1 sshd[2213]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 11:28:57 server1 sshd[2052]: Accepted password for bob from 10.0.1.133 port 52414 ssh2
+Jul 16 11:28:58 server1 sshd[2052]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 16 11:32:00 server1 systemd[1]: Started Session 26 of user alice.
+Jul 16 11:34:26 server1 sshd[1506]: pam_unix(sshd:session): session closed for user carol
+Jul 16 11:36:00 server1 sshd[2740]: Failed password for carol from 10.0.2.70 port 64057 ssh2
+Jul 16 11:42:37 server1 sshd[1539]: Accepted password for bob from 10.0.1.96 port 57753 ssh2
+Jul 16 11:42:38 server1 sshd[1539]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 16 11:50:42 server1 sshd[1368]: pam_unix(sshd:session): session closed for user bob
+Jul 16 11:54:40 server1 sshd[1950]: pam_unix(sshd:session): session closed for user bob
+Jul 16 12:24:00 server1 sshd[2967]: Failed password for admin from 10.0.10.71 port 52946 ssh2
+Jul 16 12:29:00 server1 CRON[1666]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 12:32:00 server1 CRON[2223]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 12:32:00 server1 CRON[2250]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 12:37:00 server1 CRON[2681]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 12:43:00 server1 CRON[1374]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 12:45:00 server1 CRON[1504]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 13:08:00 server1 CRON[2237]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 13:23:34 server1 sshd[2835]: Accepted password for admin from 10.0.10.176 port 52830 ssh2
+Jul 16 13:23:35 server1 sshd[2835]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 14:00:23 server1 sshd[2889]: Accepted password for admin from 10.0.10.53 port 54777 ssh2
+Jul 16 14:00:24 server1 sshd[2889]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 14:14:37 server1 sshd[1941]: pam_unix(sshd:session): session closed for user alice
+Jul 16 14:16:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 16 14:20:57 server1 sshd[2052]: pam_unix(sshd:session): session closed for user bob
+Jul 16 14:28:40 server1 sshd[1957]: Accepted password for alice from 10.0.0.79 port 63047 ssh2
+Jul 16 14:28:41 server1 sshd[1957]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 14:56:00 server1 CRON[1630]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 14:57:00 server1 CRON[1261]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 15:07:47 server1 sshd[1831]: Accepted password for dave from 10.0.3.18 port 57802 ssh2
+Jul 16 15:07:48 server1 sshd[1831]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 16 15:20:00 server1 CRON[2608]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 15:31:56 server1 sshd[2359]: Accepted password for admin from 10.0.10.242 port 52198 ssh2
+Jul 16 15:31:57 server1 sshd[2359]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 15:32:42 server1 sshd[1874]: pam_unix(sshd:session): session closed for user admin
+Jul 16 15:32:50 server1 sshd[2093]: Accepted password for admin from 10.0.10.131 port 59079 ssh2
+Jul 16 15:32:51 server1 sshd[2093]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 16:23:15 server1 sshd[2213]: pam_unix(sshd:session): session closed for user alice
+Jul 16 16:29:37 server1 sshd[1539]: pam_unix(sshd:session): session closed for user bob
+Jul 16 16:31:00 server1 systemd[1]: Started Session 57 of user carol.
+Jul 16 16:34:05 server1 sshd[2192]: Accepted password for carol from 10.0.2.130 port 60501 ssh2
+Jul 16 16:34:06 server1 sshd[2192]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 16 16:43:46 server1 sshd[2868]: Accepted password for alice from 10.0.0.31 port 53742 ssh2
+Jul 16 16:43:47 server1 sshd[2868]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 16:47:31 server1 sshd[1737]: Accepted password for alice from 10.0.0.215 port 64813 ssh2
+Jul 16 16:47:32 server1 sshd[1737]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 16:50:15 server1 sshd[2613]: Accepted password for dave from 10.0.3.85 port 56161 ssh2
+Jul 16 16:50:16 server1 sshd[2613]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 16 16:52:00 server1 sshd[1447]: Failed password for dave from 10.0.3.186 port 64614 ssh2
+Jul 16 17:18:19 server1 sshd[2128]: Accepted password for carol from 10.0.2.116 port 59873 ssh2
+Jul 16 17:18:20 server1 sshd[2128]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 16 17:34:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 16 17:52:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 17:58:46 server1 sshd[2868]: pam_unix(sshd:session): session closed for user alice
+Jul 16 17:59:17 server1 sshd[2544]: Accepted password for alice from 10.0.0.232 port 58897 ssh2
+Jul 16 17:59:18 server1 sshd[2544]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 18:00:40 server1 sshd[1957]: pam_unix(sshd:session): session closed for user alice
+Jul 16 18:06:00 server1 systemd[1]: Started Session 42 of user carol.
+Jul 16 18:08:00 server1 CRON[2144]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 18:22:56 server1 sshd[2359]: pam_unix(sshd:session): session closed for user admin
+Jul 16 18:46:00 server1 CRON[2484]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 18:49:19 server1 sshd[2385]: Accepted password for admin from 10.0.10.178 port 51923 ssh2
+Jul 16 18:49:20 server1 sshd[2385]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 16 18:53:00 server1 sshd[2915]: Failed password for dave from 10.0.3.190 port 55345 ssh2
+Jul 16 19:05:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 19:09:00 server1 sshd[2058]: Failed password for carol from 10.0.2.37 port 50627 ssh2
+Jul 16 19:23:00 server1 sshd[2212]: Failed password for bob from 10.0.1.133 port 59202 ssh2
+Jul 16 19:28:31 server1 sshd[2557]: Accepted password for carol from 10.0.2.60 port 55829 ssh2
+Jul 16 19:28:32 server1 sshd[2557]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 16 19:34:50 server1 sshd[2093]: pam_unix(sshd:session): session closed for user admin
+Jul 16 19:37:47 server1 sshd[2098]: Accepted password for alice from 10.0.0.195 port 55447 ssh2
+Jul 16 19:37:48 server1 sshd[2098]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 19:40:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 19:45:07 server1 sshd[2649]: Accepted password for alice from 10.0.0.7 port 63912 ssh2
+Jul 16 19:45:08 server1 sshd[2649]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 16 19:47:00 server1 systemd[1]: Started Session 21 of user bob.
+Jul 16 19:47:00 server1 CRON[1572]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 20:21:00 server1 CRON[2110]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 20:23:35 server1 sshd[2045]: Accepted password for dave from 10.0.3.241 port 51680 ssh2
+Jul 16 20:23:36 server1 sshd[2045]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 16 20:28:39 server1 sshd[2699]: Accepted password for carol from 10.0.2.15 port 64180 ssh2
+Jul 16 20:28:40 server1 sshd[2699]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 16 20:32:52 server1 sshd[1618]: Accepted password for dave from 10.0.3.2 port 60775 ssh2
+Jul 16 20:32:53 server1 sshd[1618]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 16 20:38:00 server1 CRON[2601]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 16 20:55:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 16 21:00:17 server1 sshd[2544]: pam_unix(sshd:session): session closed for user alice
+Jul 16 21:03:19 server1 sshd[2385]: pam_unix(sshd:session): session closed for user admin
+Jul 16 21:39:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 16 21:40:19 server1 sshd[2128]: pam_unix(sshd:session): session closed for user carol
+Jul 16 21:43:05 server1 sshd[2192]: pam_unix(sshd:session): session closed for user carol
+Jul 16 21:44:52 server1 sshd[1618]: pam_unix(sshd:session): session closed for user dave
+Jul 16 21:45:00 server1 CRON[1303]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 22:08:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 16 22:36:00 server1 CRON[2856]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 16 23:28:00 server1 CRON[2116]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 16 23:41:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 00:45:00 server1 CRON[2666]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 00:58:47 server1 sshd[2098]: pam_unix(sshd:session): session closed for user alice
+Jul 17 01:31:00 server1 CRON[2859]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 01:36:00 server1 CRON[2241]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 02:36:07 server1 sshd[2649]: pam_unix(sshd:session): session closed for user alice
+Jul 17 03:47:00 server1 CRON[2718]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 04:41:00 server1 CRON[2428]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 05:23:00 server1 CRON[1987]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 05:29:00 server1 CRON[2296]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 05:46:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 17 06:37:00 server1 CRON[2616]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 07:12:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 07:20:10 server1 sshd[1939]: Accepted password for dave from 10.0.3.207 port 60127 ssh2
+Jul 17 07:20:11 server1 sshd[1939]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 07:25:21 server1 sshd[2596]: Accepted password for carol from 10.0.2.217 port 60161 ssh2
+Jul 17 07:25:22 server1 sshd[2596]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 07:36:00 server1 systemd[1]: Started Session 22 of user dave.
+Jul 17 07:50:12 server1 sshd[2104]: Accepted password for bob from 10.0.1.228 port 50686 ssh2
+Jul 17 07:50:13 server1 sshd[2104]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 08:10:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 17 08:29:23 server1 sshd[1765]: Accepted password for admin from 10.0.10.174 port 62271 ssh2
+Jul 17 08:29:24 server1 sshd[1765]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 17 08:32:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 08:55:00 server1 CRON[1553]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 09:04:00 server1 sshd[1727]: Failed password for admin from 10.0.10.115 port 55661 ssh2
+Jul 17 09:04:18 server1 sshd[2007]: Accepted password for bob from 10.0.1.218 port 62912 ssh2
+Jul 17 09:04:19 server1 sshd[2007]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 09:08:46 server1 sshd[2496]: Accepted password for carol from 10.0.2.141 port 58000 ssh2
+Jul 17 09:08:47 server1 sshd[2496]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 09:12:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 09:22:13 server1 sshd[2951]: Accepted password for dave from 10.0.3.234 port 53066 ssh2
+Jul 17 09:22:14 server1 sshd[2951]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 09:24:12 server1 sshd[1659]: Accepted password for admin from 10.0.10.237 port 59820 ssh2
+Jul 17 09:24:13 server1 sshd[1659]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 17 09:37:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 17 09:38:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 17 09:49:08 server1 sshd[2426]: Accepted password for dave from 10.0.3.198 port 60510 ssh2
+Jul 17 09:49:09 server1 sshd[2426]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 10:07:01 server1 sshd[2152]: Accepted password for carol from 10.0.2.190 port 53048 ssh2
+Jul 17 10:07:02 server1 sshd[2152]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 10:08:49 server1 sshd[2917]: Accepted password for alice from 10.0.0.199 port 59579 ssh2
+Jul 17 10:08:50 server1 sshd[2917]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 17 10:18:00 server1 CRON[2339]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 10:43:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 17 10:58:00 server1 CRON[2478]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 11:06:00 server1 CRON[1806]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 11:24:13 server1 sshd[2951]: pam_unix(sshd:session): session closed for user dave
+Jul 17 11:29:00 server1 sshd[1850]: Failed password for admin from 10.0.10.131 port 59919 ssh2
+Jul 17 11:48:24 server1 sshd[1472]: Accepted password for carol from 10.0.2.220 port 64608 ssh2
+Jul 17 11:48:25 server1 sshd[1472]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 11:50:50 server1 sshd[1584]: Accepted password for bob from 10.0.1.162 port 59663 ssh2
+Jul 17 11:50:51 server1 sshd[1584]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 12:21:48 server1 sshd[1487]: Accepted password for dave from 10.0.3.227 port 56211 ssh2
+Jul 17 12:21:49 server1 sshd[1487]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 12:26:00 server1 sshd[1600]: Failed password for dave from 10.0.3.87 port 55260 ssh2
+Jul 17 12:36:49 server1 sshd[2917]: pam_unix(sshd:session): session closed for user alice
+Jul 17 12:41:05 server1 sshd[2464]: Accepted password for bob from 10.0.1.238 port 57369 ssh2
+Jul 17 12:41:06 server1 sshd[2464]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 12:42:00 server1 CRON[2368]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 13:00:00 server1 sshd[1300]: Failed password for bob from 10.0.1.101 port 54345 ssh2
+Jul 17 13:03:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 13:26:00 server1 sshd[2458]: Failed password for admin from 10.0.10.144 port 58683 ssh2
+Jul 17 13:41:00 server1 CRON[1796]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 13:47:20 server1 sshd[1590]: Accepted password for alice from 10.0.0.156 port 54102 ssh2
+Jul 17 13:47:21 server1 sshd[1590]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 17 13:58:46 server1 sshd[2879]: Accepted password for bob from 10.0.1.83 port 54444 ssh2
+Jul 17 13:58:47 server1 sshd[2879]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 14:01:47 server1 sshd[1493]: Accepted password for alice from 10.0.0.140 port 50853 ssh2
+Jul 17 14:01:48 server1 sshd[1493]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 17 14:17:08 server1 sshd[2426]: pam_unix(sshd:session): session closed for user dave
+Jul 17 14:22:00 server1 systemd[1]: Started Session 25 of user carol.
+Jul 17 14:36:15 server1 sshd[2532]: Accepted password for dave from 10.0.3.180 port 53700 ssh2
+Jul 17 14:36:16 server1 sshd[2532]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 14:39:00 server1 CRON[2018]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 14:43:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 17 14:46:00 server1 CRON[2643]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 14:50:00 server1 CRON[1530]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 14:52:23 server1 sshd[1765]: pam_unix(sshd:session): session closed for user admin
+Jul 17 14:57:00 server1 systemd[1]: Started Session 58 of user dave.
+Jul 17 14:57:18 server1 sshd[2007]: pam_unix(sshd:session): session closed for user bob
+Jul 17 15:02:00 server1 CRON[1683]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 15:14:01 server1 sshd[2152]: pam_unix(sshd:session): session closed for user carol
+Jul 17 15:22:49 server1 sshd[2922]: Accepted password for alice from 10.0.0.55 port 57404 ssh2
+Jul 17 15:22:50 server1 sshd[2922]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 17 15:30:46 server1 sshd[2879]: pam_unix(sshd:session): session closed for user bob
+Jul 17 15:32:41 server1 sshd[2707]: Accepted password for dave from 10.0.3.128 port 56703 ssh2
+Jul 17 15:32:42 server1 sshd[2707]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 15:34:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 15:45:00 server1 sshd[1650]: Failed password for carol from 10.0.2.71 port 56807 ssh2
+Jul 17 15:50:47 server1 sshd[1493]: pam_unix(sshd:session): session closed for user alice
+Jul 17 15:59:59 server1 sshd[2309]: Accepted password for carol from 10.0.2.205 port 61823 ssh2
+Jul 17 16:00:00 server1 sshd[2309]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 16:03:19 server1 sshd[2849]: Accepted password for admin from 10.0.10.172 port 62151 ssh2
+Jul 17 16:03:20 server1 sshd[2849]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 17 16:17:15 server1 sshd[2532]: pam_unix(sshd:session): session closed for user dave
+Jul 17 16:22:36 server1 sshd[1732]: Accepted password for dave from 10.0.3.77 port 61456 ssh2
+Jul 17 16:22:37 server1 sshd[1732]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 17 16:27:17 server1 sshd[2129]: Accepted password for carol from 10.0.2.165 port 62967 ssh2
+Jul 17 16:27:18 server1 sshd[2129]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 17 16:27:49 server1 sshd[2922]: pam_unix(sshd:session): session closed for user alice
+Jul 17 17:00:00 server1 CRON[1351]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 17:04:50 server1 sshd[1584]: pam_unix(sshd:session): session closed for user bob
+Jul 17 17:12:00 server1 sshd[1968]: Failed password for admin from 10.0.10.84 port 59912 ssh2
+Jul 17 17:24:05 server1 sshd[2562]: Accepted password for admin from 10.0.10.199 port 60135 ssh2
+Jul 17 17:24:06 server1 sshd[2562]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 17 17:32:00 server1 CRON[2714]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 17:40:38 server1 sshd[1809]: Accepted password for bob from 10.0.1.250 port 50349 ssh2
+Jul 17 17:40:39 server1 sshd[1809]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 18:01:00 server1 sshd[2095]: Failed password for carol from 10.0.2.93 port 62919 ssh2
+Jul 17 18:22:24 server1 sshd[1472]: pam_unix(sshd:session): session closed for user carol
+Jul 17 19:30:00 server1 CRON[2276]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 19:34:05 server1 sshd[2464]: pam_unix(sshd:session): session closed for user bob
+Jul 17 19:34:56 server1 sshd[1758]: Accepted password for bob from 10.0.1.250 port 55994 ssh2
+Jul 17 19:34:57 server1 sshd[1758]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 19:57:00 server1 CRON[2262]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 17 20:03:41 server1 sshd[2707]: pam_unix(sshd:session): session closed for user dave
+Jul 17 20:04:28 server1 sshd[2160]: Accepted password for bob from 10.0.1.46 port 64723 ssh2
+Jul 17 20:04:29 server1 sshd[2160]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 20:07:29 server1 sshd[1438]: Accepted password for bob from 10.0.1.36 port 63130 ssh2
+Jul 17 20:07:30 server1 sshd[1438]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 17 20:19:00 server1 systemd[1]: Started Session 85 of user carol.
+Jul 17 20:20:36 server1 sshd[1931]: Accepted password for alice from 10.0.0.111 port 59394 ssh2
+Jul 17 20:20:37 server1 sshd[1931]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 17 20:40:20 server1 sshd[1590]: pam_unix(sshd:session): session closed for user alice
+Jul 17 20:50:00 server1 CRON[2750]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 21:38:00 server1 CRON[1993]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 17 21:42:59 server1 sshd[2309]: pam_unix(sshd:session): session closed for user carol
+Jul 17 22:08:00 server1 systemd[1]: Started Session 42 of user admin.
+Jul 17 22:11:19 server1 sshd[2849]: pam_unix(sshd:session): session closed for user admin
+Jul 17 22:26:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 22:30:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 22:46:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 17 22:47:36 server1 sshd[1732]: pam_unix(sshd:session): session closed for user dave
+Jul 17 22:52:17 server1 sshd[2129]: pam_unix(sshd:session): session closed for user carol
+Jul 17 23:10:00 server1 CRON[1476]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 17 23:27:56 server1 sshd[1758]: pam_unix(sshd:session): session closed for user bob
+Jul 18 00:31:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 18 00:33:00 server1 CRON[2511]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 01:06:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 01:22:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 01:44:00 server1 CRON[1800]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 01:45:29 server1 sshd[1438]: pam_unix(sshd:session): session closed for user bob
+Jul 18 02:23:00 server1 CRON[2053]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 02:58:00 server1 CRON[1749]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 03:39:00 server1 systemd[1]: Started Session 7 of user bob.
+Jul 18 03:44:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 18 05:11:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 18 05:17:00 server1 CRON[1279]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 05:19:00 server1 CRON[1502]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 05:39:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 06:31:00 server1 CRON[2762]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 06:51:00 server1 CRON[2036]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 06:53:00 server1 CRON[1458]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 07:06:26 server1 sshd[2330]: Accepted password for bob from 10.0.1.86 port 61753 ssh2
+Jul 18 07:06:27 server1 sshd[2330]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 07:11:00 server1 sshd[1880]: Failed password for carol from 10.0.2.71 port 61513 ssh2
+Jul 18 07:16:13 server1 sshd[2067]: Accepted password for alice from 10.0.0.215 port 52449 ssh2
+Jul 18 07:16:14 server1 sshd[2067]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 07:18:00 server1 CRON[1580]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 07:25:00 server1 sshd[1808]: Failed password for carol from 10.0.2.72 port 53109 ssh2
+Jul 18 07:30:54 server1 sshd[1834]: Accepted password for alice from 10.0.0.104 port 56984 ssh2
+Jul 18 07:30:55 server1 sshd[1834]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 07:36:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 07:51:00 server1 CRON[2658]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 08:05:00 server1 CRON[2844]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 08:15:46 server1 sshd[1528]: Accepted password for bob from 10.0.1.106 port 58004 ssh2
+Jul 18 08:15:47 server1 sshd[1528]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 08:19:25 server1 sshd[2176]: Accepted password for alice from 10.0.0.185 port 61777 ssh2
+Jul 18 08:19:26 server1 sshd[2176]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 08:24:00 server1 CRON[2965]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 08:37:36 server1 sshd[2909]: Accepted password for dave from 10.0.3.17 port 57126 ssh2
+Jul 18 08:37:37 server1 sshd[2909]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 18 08:56:15 server1 sshd[1327]: Accepted password for carol from 10.0.2.96 port 54669 ssh2
+Jul 18 08:56:16 server1 sshd[1327]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 09:03:00 server1 sshd[1311]: Failed password for admin from 10.0.10.247 port 58320 ssh2
+Jul 18 09:06:26 server1 sshd[2330]: pam_unix(sshd:session): session closed for user bob
+Jul 18 09:11:00 server1 CRON[2005]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 09:13:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 09:15:00 server1 CRON[2069]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 09:27:00 server1 CRON[2083]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 09:28:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 18 09:35:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 09:55:00 server1 CRON[1568]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 10:07:00 server1 CRON[2686]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 10:17:00 server1 sshd[1473]: Failed password for dave from 10.0.3.113 port 57956 ssh2
+Jul 18 10:24:44 server1 sshd[1451]: Accepted password for bob from 10.0.1.41 port 61573 ssh2
+Jul 18 10:24:45 server1 sshd[1451]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 10:57:00 server1 sshd[2543]: Failed password for bob from 10.0.1.224 port 61342 ssh2
+Jul 18 10:59:00 server1 CRON[2219]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 11:01:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 11:19:16 server1 sshd[1543]: Accepted password for dave from 10.0.3.61 port 51976 ssh2
+Jul 18 11:19:17 server1 sshd[1543]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 18 11:34:54 server1 sshd[1834]: pam_unix(sshd:session): session closed for user alice
+Jul 18 11:49:00 server1 CRON[2314]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 11:52:11 server1 sshd[2930]: Accepted password for carol from 10.0.2.9 port 56625 ssh2
+Jul 18 11:52:12 server1 sshd[2930]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 12:00:00 server1 CRON[2580]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 12:31:36 server1 sshd[2909]: pam_unix(sshd:session): session closed for user dave
+Jul 18 13:11:25 server1 sshd[2176]: pam_unix(sshd:session): session closed for user alice
+Jul 18 13:29:34 server1 sshd[2472]: Accepted password for carol from 10.0.2.168 port 55886 ssh2
+Jul 18 13:29:35 server1 sshd[2472]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 13:32:58 server1 sshd[2187]: Accepted password for bob from 10.0.1.224 port 50907 ssh2
+Jul 18 13:32:59 server1 sshd[2187]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 13:41:00 server1 sshd[2338]: Failed password for bob from 10.0.1.241 port 64428 ssh2
+Jul 18 13:57:00 server1 sshd[1386]: Failed password for alice from 10.0.0.149 port 53114 ssh2
+Jul 18 14:06:51 server1 sshd[1974]: Accepted password for alice from 10.0.0.232 port 63719 ssh2
+Jul 18 14:06:52 server1 sshd[1974]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 14:15:51 server1 sshd[2207]: Accepted password for carol from 10.0.2.208 port 61222 ssh2
+Jul 18 14:15:52 server1 sshd[2207]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 14:28:00 server1 CRON[1400]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 14:31:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 18 14:41:15 server1 sshd[1327]: pam_unix(sshd:session): session closed for user carol
+Jul 18 14:42:07 server1 sshd[1501]: Accepted password for bob from 10.0.1.146 port 53571 ssh2
+Jul 18 14:42:08 server1 sshd[1501]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 14:45:44 server1 sshd[1451]: pam_unix(sshd:session): session closed for user bob
+Jul 18 14:47:00 server1 CRON[2906]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 15:02:00 server1 sshd[2498]: Failed password for alice from 10.0.0.216 port 63872 ssh2
+Jul 18 15:16:00 server1 CRON[2108]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 15:20:00 server1 sshd[2846]: Failed password for bob from 10.0.1.102 port 59608 ssh2
+Jul 18 15:21:42 server1 sshd[1872]: Accepted password for admin from 10.0.10.33 port 56730 ssh2
+Jul 18 15:21:43 server1 sshd[1872]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 18 15:29:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 15:52:00 server1 sshd[2518]: Failed password for alice from 10.0.0.180 port 61043 ssh2
+Jul 18 15:59:51 server1 sshd[2207]: pam_unix(sshd:session): session closed for user carol
+Jul 18 16:14:00 server1 CRON[1832]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 16:28:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 18 16:36:09 server1 sshd[2990]: Accepted password for carol from 10.0.2.146 port 53084 ssh2
+Jul 18 16:36:10 server1 sshd[2990]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 16:42:58 server1 sshd[2187]: pam_unix(sshd:session): session closed for user bob
+Jul 18 16:43:00 server1 sshd[1875]: Failed password for admin from 10.0.10.166 port 59121 ssh2
+Jul 18 17:04:28 server1 sshd[2185]: Accepted password for carol from 10.0.2.121 port 61142 ssh2
+Jul 18 17:04:29 server1 sshd[2185]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 17:07:11 server1 sshd[2930]: pam_unix(sshd:session): session closed for user carol
+Jul 18 17:10:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 17:16:29 server1 sshd[1722]: Accepted password for dave from 10.0.3.67 port 60925 ssh2
+Jul 18 17:16:30 server1 sshd[1722]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 18 17:24:43 server1 sshd[1396]: Accepted password for dave from 10.0.3.193 port 64791 ssh2
+Jul 18 17:24:44 server1 sshd[1396]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 18 17:31:00 server1 CRON[2272]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 17:45:55 server1 sshd[2440]: Accepted password for admin from 10.0.10.14 port 54009 ssh2
+Jul 18 17:45:56 server1 sshd[2440]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Jul 18 17:48:00 server1 CRON[1253]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 17:52:07 server1 sshd[1501]: pam_unix(sshd:session): session closed for user bob
+Jul 18 17:52:29 server1 sshd[1770]: Accepted password for alice from 10.0.0.234 port 61486 ssh2
+Jul 18 17:52:30 server1 sshd[1770]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 17:53:16 server1 sshd[1543]: pam_unix(sshd:session): session closed for user dave
+Jul 18 18:13:28 server1 sshd[2618]: Accepted password for dave from 10.0.3.206 port 54773 ssh2
+Jul 18 18:13:29 server1 sshd[2618]: pam_unix(sshd:session): session opened for user dave by (uid=0)
+Jul 18 18:29:40 server1 sshd[2756]: Accepted password for alice from 10.0.0.172 port 61424 ssh2
+Jul 18 18:29:41 server1 sshd[2756]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 18:35:00 server1 CRON[1960]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 18:36:00 server1 CRON[1477]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 19:00:29 server1 sshd[1770]: pam_unix(sshd:session): session closed for user alice
+Jul 18 19:07:09 server1 sshd[2990]: pam_unix(sshd:session): session closed for user carol
+Jul 18 19:08:00 server1 CRON[2728]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 19:18:00 server1 sshd[2033]: Failed password for dave from 10.0.3.201 port 56256 ssh2
+Jul 18 19:21:00 server1 sshd[2626]: Failed password for dave from 10.0.3.249 port 63045 ssh2
+Jul 18 19:25:34 server1 sshd[2472]: pam_unix(sshd:session): session closed for user carol
+Jul 18 19:30:00 server1 CRON[2300]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 19:39:08 server1 sshd[2010]: Accepted password for carol from 10.0.2.154 port 56172 ssh2
+Jul 18 19:39:09 server1 sshd[2010]: pam_unix(sshd:session): session opened for user carol by (uid=0)
+Jul 18 19:42:00 server1 sshd[2396]: Failed password for admin from 10.0.10.213 port 53578 ssh2
+Jul 18 20:10:00 server1 CRON[2801]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 20:18:00 server1 CRON[2958]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 20:19:00 server1 sshd[1210]: Failed password for deploy from 203.0.113.224 port 55310 ssh2
+Jul 18 20:19:02 server1 sshd[1216]: Failed password for oracle from 203.0.113.224 port 51832 ssh2
+Jul 18 20:19:06 server1 sshd[1217]: Failed password for guest from 203.0.113.224 port 53923 ssh2
+Jul 18 20:19:09 server1 sshd[1219]: Failed password for backup from 203.0.113.224 port 64385 ssh2
+Jul 18 20:19:11 server1 sshd[1227]: Failed password for test from 203.0.113.224 port 61991 ssh2
+Jul 18 20:19:13 server1 sshd[1236]: Failed password for postgres from 203.0.113.224 port 62461 ssh2
+Jul 18 20:19:16 server1 sshd[1244]: Failed password for root from 203.0.113.224 port 52103 ssh2
+Jul 18 20:19:22 server1 sshd[1249]: Failed password for ftpuser from 203.0.113.224 port 52705 ssh2
+Jul 18 20:19:55 server1 sshd[2440]: pam_unix(sshd:session): session closed for user admin
+Jul 18 20:28:00 server1 CRON[1622]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 20:45:00 server1 CRON[1702]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 20:49:43 server1 sshd[1396]: pam_unix(sshd:session): session closed for user dave
+Jul 18 20:54:28 server1 sshd[1691]: Accepted password for alice from 10.0.0.27 port 58617 ssh2
+Jul 18 20:54:29 server1 sshd[1691]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Jul 18 20:56:00 server1 sshd[1465]: Failed password for alice from 10.0.0.197 port 59432 ssh2
+Jul 18 20:58:21 server1 sshd[2467]: Accepted password for bob from 10.0.1.79 port 64892 ssh2
+Jul 18 20:58:22 server1 sshd[2467]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 20:59:05 server1 sshd[1514]: Accepted password for bob from 10.0.1.73 port 64444 ssh2
+Jul 18 20:59:06 server1 sshd[1514]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Jul 18 21:05:00 server1 CRON[1409]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 21:15:00 server1 systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 18 21:19:00 server1 CRON[1413]: (root) CMD (run-parts /etc/cron.hourly)
+Jul 18 21:52:00 server1 CRON[1591]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 21:57:00 server1 systemd[1]: Reloading system manager configuration.
+Jul 18 22:25:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 18 22:26:00 server1 CRON[2619]: (root) CMD (/usr/local/bin/backup-nightly.sh)
+Jul 18 22:44:28 server1 sshd[2185]: pam_unix(sshd:session): session closed for user carol
+Jul 18 23:01:00 server1 CRON[2419]: (root) CMD (/usr/lib/php/sessionclean)
+Jul 18 23:20:28 server1 sshd[1691]: pam_unix(sshd:session): session closed for user alice
+Jul 18 23:28:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 18 23:45:21 server1 sshd[2467]: pam_unix(sshd:session): session closed for user bob
+Jul 19 01:35:05 server1 sshd[1514]: pam_unix(sshd:session): session closed for user bob
+Jul 19 02:28:08 server1 sshd[2010]: pam_unix(sshd:session): session closed for user carol

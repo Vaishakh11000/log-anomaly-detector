@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# data/processed/ is intentionally committed: the pre-computed incidents.json
+# is what lets the dashboard run immediately after `uv sync`.

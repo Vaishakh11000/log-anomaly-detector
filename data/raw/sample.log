@@ -1,0 +1,11 @@
+Jul 18 09:58:12 server1 sshd[1201]: Accepted password for alice from 10.0.0.12 port 51000 ssh2
+Jul 18 09:59:03 server1 sshd[1202]: Accepted password for bob from 10.0.0.15 port 51010 ssh2
+Jul 18 10:22:31 server1 sshd[1382]: Failed password for admin from 192.168.1.5 port 51422 ssh2
+Jul 18 10:22:33 server1 sshd[1383]: Failed password for admin from 192.168.1.5 port 51423 ssh2
+Jul 18 10:22:35 server1 sshd[1384]: Failed password for admin from 192.168.1.5 port 51424 ssh2
+Jul 18 10:22:37 server1 sshd[1385]: Failed password for admin from 192.168.1.5 port 51425 ssh2
+Jul 18 10:22:41 server1 sshd[1386]: Accepted password for admin from 192.168.1.5 port 51430 ssh2
+Jul 18 10:23:02 server1 sudo[1390]: admin : COMMAND=/bin/su root
+Jul 18 10:23:45 server1 usermod[1391]: new user 'backdoor01' added to group sudo
+Jul 18 11:15:00 server1 sshd[1450]: Accepted password for alice from 10.0.0.12 port 52011 ssh2
+Jul 18 11:45:22 server1 cron[1500]: (root) CMD (run-parts /etc/cron.hourly)
